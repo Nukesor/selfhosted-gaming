@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+      <title>List of games</title>     
+      <link rel="stylesheet" href="http://127.0.0.1:1111/main.css">
+    </head>
+
+    <body>
+      <nav>
+        <div id="subnav">
+          <form class="theme-selector">
+            <button type="button" id="theme-light-button" class="theme-button" onclick="enableTheme('light', true)">&#9706;</button>
+            <button type="button" id="theme-dark-button"  class="theme-button enabled" onclick="enableTheme('dark', true)">&#9705;</button>
+          </form>
+          <a href="/search">&#8981;</a>       
+        </div>
+
+      
+        <ul id="breadcrumbs">
+          
+            <li>/<a href="/tags/">tags</a>&nbsp;</li> 
+          
+            <li>/<a href="/authors/">authors</a>&nbsp;</li> 
+          
+        </ul>
+        <h1>List of games</h1>  
+          
+    <a href="javascript:void(0);" onclick="burger()" id="mobile">&#9776;</a>
+        <ul id="bger">
+        
+              
+            <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAaElEQVRIx2NgGOqAEcZgZefQb25suIBPcW19g8Hvnz8ukmwBKzuHQHNjw3tiNFRUVDCSZAExLicX1NY3ODJ2dHT8ZxgF+OKA1kHERGsfjFowasGoBaMWEGNBbX2DI60Mr61vkBr69QEAFDIY9Yz1owAAAAAASUVORK5CYII=" width="16px" />&nbsp;<a href="http://127.0.0.1:1111/garrys_mod/">Garry&#x27;s Mod</a></li>
+            
+            
+        </ul>
+
+      
+      </nav>
+
+      <main>
+      
+
+        
+        
+          
+          
+        
+
+        
+
+        <article>
+        <h2 id="hello-everyone">Hello everyone!<a class="anchor" href="#hello-everyone">§</a>&nbsp;</h2>
+<p>This site aims to be a guide for setting up your own dedicated game servers.</p>
+<p>This Project is <strong>open-source</strong> and is supposed to act as an <strong>archive</strong>.
+Especially for old games, those guides are often located in forums or selfhosted websites that go offline and disappear all the time.</p>
+<p>Let's keep it in one place, where everybody can contribute to it and make a quick backup.</p>
+<p>In case you feel like there's any game missing, please create an issue or pull request on the official <a href="https://github.com/nukesor/selfhosted-gaming">repository</a>.</p>
+
+        </article>
+      
+      </main>
+
+      <script type="text/javascript" src="http://127.0.0.1:1111/themes.js"></script>
+
+      <script>
+        function burger() {
+          var x = document.getElementById("bger");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+        </script>
+    <script src="/livereload.js?port=1025&amp;mindelay=10"></script></body>
+</html>

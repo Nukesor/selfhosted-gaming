@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+      <title> List of games | Trouble in Terrorist Town </title>     
+      <link rel="stylesheet" href="http://127.0.0.1:1111/main.css">
+    </head>
+
+    <body>
+      <nav>
+        <div id="subnav">
+          <form class="theme-selector">
+            <button type="button" id="theme-light-button" class="theme-button" onclick="enableTheme('light', true)">&#9706;</button>
+            <button type="button" id="theme-dark-button"  class="theme-button enabled" onclick="enableTheme('dark', true)">&#9705;</button>
+          </form>
+          <a href="/search">&#8981;</a>       
+        </div>
+
+      
+    <ul id="breadcrumbs">
+        
+            
+                <li><a href="http:&#x2F;&#x2F;127.0.0.1:1111&#x2F;">Selfhosted Game Servers</a>&nbsp;&#8594;&nbsp; </li>
+            
+            
+                <li><a href="http:&#x2F;&#x2F;127.0.0.1:1111&#x2F;garrys_mod&#x2F;">Garry&#x27;s Mod</a>&nbsp;&#8594;&nbsp; </li>
+            
+                <li>Trouble in Terrorist Town</li>
+    </ul>
+    <h1>Trouble in Terrorist Town</h1>
+    
+    <a href="javascript:void(0);" onclick="burger()" id="mobile">&#9776;</a>
+        <ul id="bger">
+        
+            
+        </ul>
+ 
+
+      </nav>
+
+      <main>
+      
+
+        
+        
+          
+          
+            
+            
+          
+            
+            
+          
+            
+            
+              
+            
+              
+            
+          
+            
+            
+          
+        
+
+        
+            <ul id="toc">
+              
+                <li><a href="http://127.0.0.1:1111/garrys_mod/ttt/#trouble-in-terrorist-town">Trouble in Terrorist Town</a>
+                <ul>        
+                  
+                  <li><a href="http://127.0.0.1:1111/garrys_mod/ttt/#prerequisites">Prerequisites</a></li>
+                
+                  <li><a href="http://127.0.0.1:1111/garrys_mod/ttt/#installation">Installation</a></li>
+                
+                  <li><a href="http://127.0.0.1:1111/garrys_mod/ttt/#configuration-and-workshop-items">Configuration and Workshop Items</a></li>
+                
+                  <li><a href="http://127.0.0.1:1111/garrys_mod/ttt/#run-the-server">Run the Server</a></li>
+                
+              </ul>
+        
+              </li>
+        
+            </ul>
+        
+
+        <article>
+        <h1 id="trouble-in-terrorist-town">Trouble in Terrorist Town<a class="anchor" href="#trouble-in-terrorist-town">§</a>&nbsp;</h1>
+<p>This section deals with setting up a Garry's Mod server for the game mode <em>Trouble in Terrorist Town</em> (TTT).</p>
+<h2 id="prerequisites">Prerequisites<a class="anchor" href="#prerequisites">§</a>&nbsp;</h2>
+<p>Follow the installation instruction for Garry's Mod server in the <a href="/garrys_mod/">Garry's Mod section</a>.</p>
+<h2 id="installation">Installation<a class="anchor" href="#installation">§</a>&nbsp;</h2>
+<p>Since TTT builds upon CS:Source game content, the game won't work properly without downloading and installing these files.</p>
+<ol>
+<li>Go to <a href="https://gmodcontent.com/">this link</a></li>
+<li>Download the <code>Counter Strike: Source Game Content</code>.</li>
+<li>Unzip the downloaded file into <code>$GAME_DIR/garrys/addons/</code>
+It should look something like this afterwards.</li>
+</ol>
+<pre style="background-color:#2b303b;">
+<code><span style="color:#c0c5ce;">$GAME_DIR
+    └─garrys
+        └─addons
+            └─css-content-gmodcontent
+</span></code></pre><h2 id="configuration-and-workshop-items">Configuration and Workshop Items<a class="anchor" href="#configuration-and-workshop-items">§</a>&nbsp;</h2>
+<p>This section will deal with the configuration of the server and will probably take up the most of the setup time.</p>
+<p>Furthermore, it's a really good idea, to either use or create a steam workshop collection.
+This way, you have an easy way of adding and removing workshop content via the web interface.</p>
+<p>Otherwise you would have to manually download, copy, delete and update your server every time something changes.</p>
+<p>Another side-effect is that your friends can easily download your required mods via Steam, which is at least a <strong>HUNDRED</strong> times faster than via Garry's Mod.
+Their download speed is excruciatingly slow.</p>
+<p>If you still don't want to use workshop collections, please skip the next sub section.</p>
+<h3 id="setting-up-steam-workshop-collections">Setting up Steam Workshop Collections<a class="anchor" href="#setting-up-steam-workshop-collections">§</a>&nbsp;</h3>
+<ol>
+<li>
+<p>Get your Steam Web API key.</p>
+<ul>
+<li>Read the section <code>Optaining an Steam Web API Key</code> over <a href="https://steamcommunity.com/dev">here</a></li>
+<li>Click on <code>by filling out this form</code>.</li>
+<li>Fill out the form and get your Web API Key. We'll reference this key as <code>$STEAM_WEB_API_KEY</code></li>
+</ul>
+</li>
+<li>
+<p>Create a Steam workshop collection.</p>
+<ul>
+<li>Click on <code>Community</code> and select <code>Workshop</code>.</li>
+<li>Search for &quot;Garry's Mod&quot;.</li>
+<li>Click on <code>Browse</code> directly beneath the Garry's Mod Header and select <code>Collections</code>.</li>
+<li>Click <code>Create Collection</code> on the right.</li>
+<li>You can now add workshop items to your collection</li>
+</ul>
+</li>
+<li>
+<p>You can find your own collections like this:</p>
+<ul>
+<li>Go to your home (<code>https://steamcommunity.com/id/YOUR_USERNAME/home/</code></li>
+<li>Click on <code>My workshop</code> on the right navigation</li>
+<li>Click on <code>Collections</code></li>
+</ul>
+</li>
+<li>
+<p>Get your workshop collection ID</p>
+<ul>
+<li>After finding your collections in the last step, select your collection</li>
+<li>Now get the id that's in the URL. 
+The URL looks like this <code>https://steamcommunity.com/sharedfiles/filedetails/?id=2090357275</code>.
+The id for this workshop ID is <code>2090357275</code>.
+This ID will be referenced as <code>$WORKSHOP_ID</code>.</li>
+</ul>
+</li>
+</ol>
+<p>With this you can now create workshop collections.
+You could have, for instance, a collection for TTT and another one for Prophunt.
+This way you can neatly organize your content and all your friends </p>
+<h3 id="configuration-of-the-server">Configuration of the Server.<a class="anchor" href="#configuration-of-the-server">§</a>&nbsp;</h3>
+<p>You can configure any available variable of the game to your liking.
+This is done via the file located at <code>$GAME_DIR/garrysmod/cfg/server.cfg</code>.</p>
+<p>The configuration always has the same pattern: <code>name_of_option value</code>.</p>
+<pre style="background-color:#2b303b;">
+<code><span style="color:#c0c5ce;">// Base time per round
+ttt_haste_starting_minutes 4
+
+// Percentage of base time gained per kill
+ttt_haste_minutes_per_death 0.35
+
+// Preparation time each round
+ttt_preptime_seconds 15
+
+// Preparation time when changing to a new map
+ttt_firstpreptime 30
+
+// Time after each round
+ttt_posttime_seconds 10
+
+// ttt_roundinfo_pre_announce_distribution: Show user role distribution. Used for TTT2 Round Info
+ttt_roundinfo_pre_announce_distribution 0
+</span></code></pre>
+<p>Everything that starts with <code>//</code> is a comment and solely for giving you some context.
+The game completely ignores these lines.</p>
+<p>TTT offers some <a href="http://www.troubleinterroristtown.com/config-and-commands/convars">extensive docs</a> on which variables exist and what they do.</p>
+<p>Many mods and workshop collections bring their own variables for configuration.
+You have to read those and inform yourself about the possible configuration options.</p>
+<h2 id="run-the-server">Run the Server<a class="anchor" href="#run-the-server">§</a>&nbsp;</h2>
+<p>For the server to run, you have to know the map name of at least one map that's compatible with TTT.
+Such a map name is for instance <code>ttt_rooftops_a2</code>. They usually begin with <code>ttt_</code>.
+This will be referenced as <code>$MAP_NAME</code>.</p>
+<p>Starting the server with a steam workshop collection:</p>
+<pre style="background-color:#2b303b;">
+<code><span style="color:#96b5b4;">cd </span><span style="color:#c0c5ce;">$</span><span style="color:#bf616a;">GAME_DIR
+
+./srcds_run </span><span style="color:#c0c5ce;">\
+</span><span style="color:#bf616a;">    -game</span><span style="color:#c0c5ce;"> garrysmod \
+</span><span style="color:#bf616a;">    -usercon </span><span style="color:#c0c5ce;">\
+</span><span style="color:#bf616a;">    -net_port_try</span><span style="color:#c0c5ce;"> 1 \
+</span><span style="color:#bf616a;">    -authkey </span><span style="color:#c0c5ce;">$</span><span style="color:#bf616a;">STEAM_WEB_API_KEY </span><span style="color:#c0c5ce;">\
+    +gamemode terrortown \
+    +hostname THIS_IS_THE_SERVER_NAME_THATS_DISPLAYED_IN_GAME \
+    +map $</span><span style="color:#bf616a;">MAP_NAME </span><span style="color:#c0c5ce;">\
+    +host_workshop_collection $</span><span style="color:#bf616a;">WORKSHOP_ID
+</span></code></pre>
+<p>Starting the server without steam workshop collection:</p>
+<pre style="background-color:#2b303b;">
+<code><span style="color:#96b5b4;">cd </span><span style="color:#c0c5ce;">$</span><span style="color:#bf616a;">GAME_DIR
+
+./srcds_run </span><span style="color:#c0c5ce;">\
+</span><span style="color:#bf616a;">    -game</span><span style="color:#c0c5ce;"> garrysmod \
+</span><span style="color:#bf616a;">    -usercon </span><span style="color:#c0c5ce;">\
+</span><span style="color:#bf616a;">    -net_port_try</span><span style="color:#c0c5ce;"> 1 \
+    +gamemode terrortown \
+    +hostname THIS_IS_THE_SERVER_NAME_THATS_DISPLAYED_IN_GAME  \
+    +map $</span><span style="color:#bf616a;">MAP_NAME </span><span style="color:#c0c5ce;">\
+</span></code></pre>
+        </article>
+      
+      </main>
+
+      <script type="text/javascript" src="http://127.0.0.1:1111/themes.js"></script>
+
+      <script>
+        function burger() {
+          var x = document.getElementById("bger");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+        </script>
+    <script src="/livereload.js?port=1025&amp;mindelay=10"></script></body>
+</html>
