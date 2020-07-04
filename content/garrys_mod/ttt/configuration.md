@@ -1,7 +1,6 @@
 +++
-title = "Trouble in Terrorist Town"
-sort_by = "date"
-insert_anchor_links = "right"
+title = "TTT Configuration values"
+weight = 1
 +++
 
 # BACKUP

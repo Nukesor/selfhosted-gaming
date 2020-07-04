@@ -1,10 +1,10 @@
 +++
 title = "Selfhosted Game Servers"
-sort_by = "date"
+sort_by = "weight"
 insert_anchor_links = "right"
 +++
 
-## Hello everyone!
+# Hello everyone!
 
 This site aims to be a guide for setting up your own dedicated game servers.
 
@@ -16,3 +16,10 @@ Let's keep it in one place, where everybody can contribute to it and make a quic
 
 
 In case you feel like there's any game missing, please create an issue or pull request on the official [repository](https://github.com/nukesor/selfhosted-gaming).
+
+
+# Best practices
+
+Whenever you're done with your server setup, check out the [best practices section](/best-practices/).
+
+There're some brief explanations of best practices, which should spare you some headache, once you're familiar with them!

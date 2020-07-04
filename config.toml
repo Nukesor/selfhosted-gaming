@@ -1,7 +1,7 @@
 # The URL the site will be built for
 base_url = "https://selfhosted-gaming.com/"
 
-title = "List of games"
+title = "The ultimate guide for self-hosting game servers"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
