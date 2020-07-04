@@ -254,12 +254,11 @@ Time in minutes to ban players who changed their name. Set to 0 to disable.
 Specifies how automatic bans made by TTT (low karma, namechange, etc) should be performed. This lets you specify whether TTT should use an admin plugin to ban, which can then make it easier to remove or adjust those bans using your admin plugin's interface.
 
 Possible settings for this convar:
-
-    - `autodetect` Will detect the Lua-based plugins ULX and Evolve if present, else it will use standard "banid" bans`
-    - `ulx` Force the use of ULX/Ulib to ban.
-    - `evolve` Force the use of Evolve to ban.
-    - `sm` Will use Sourcemod's sm_ban command. Note that SM is not auto-detected.
-    - `gmod` Uses standard "banid" to ban.
+- `autodetect` Will detect the Lua-based plugins ULX and Evolve if present, else it will use standard "banid" bans`
+- `ulx` Force the use of ULX/Ulib to ban.
+- `evolve` Force the use of Evolve to ban.
+- `sm` Will use Sourcemod's sm_ban command. Note that SM is not auto-detected.
+- `gmod` Uses standard "banid" to ban.
 
 # Miscellaneous
 

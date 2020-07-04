@@ -51,6 +51,14 @@ body {
     @include color(color, --first-text-color, $theme-light-first-text-color);
 }
 
+p code {
+    color: initial;
+    background-color: #ddd;
+    padding: 2px;
+    font-size: 0.9rem;
+    border-radius: 4px;
+}
+
 @keyframes fade-in {
     0% {
         opacity: 0;
