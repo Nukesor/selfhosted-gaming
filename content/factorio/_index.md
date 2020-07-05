@@ -9,20 +9,17 @@ Factorio's server setup is super straight forward. They offer a free dedicated s
 
 You can find the download on their [homepage](https://factorio.com/download).
 
-
 ## Installation
 
 1. Create a directory where you want your game server to be. This will be referenced as `$GAME_DIR`.
 2. Untar the downloaded archive into this folder.
 3. Profit
 
-
-## Configuration of the Server.
+## Configuration of the Server
 
 The server has a configuration file at `$GAME_DIR/config/server-settings.json`.
 
 There's a `_comment_*` field for pretty much every configuration variable explaining their function.
-
 
 ## Creating a Map
 
@@ -39,7 +36,6 @@ The factorio server allows to create a map via the command line as well.
 
 The `--create $FILE` flag is responsible for creating a new map, but also requires the `--map-settings $SETTINGS_FILE` option for configuring the map generation parameters.
 Check `$GAME_DIR/bin/x86/factorio --help` for more information and up-to-date explanation of what to do.
-
 
 ## Starting the Server
 

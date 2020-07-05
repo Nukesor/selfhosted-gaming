@@ -20,6 +20,10 @@ html {
     }
 }
 
+$theme-light-code-background-color: #ddd;
+$theme-dark-code-background-color: #444;
+$theme-dark-code-text-color: #ccc;
+
 $theme-light-first-text-color: #444;
 $theme-dark-first-text-color: #888;
 $theme-light-second-text-color: #999;
@@ -28,7 +32,7 @@ $theme-light-bg-color:#fafafa;
 $theme-dark-bg-color:#262626;
 
 @mixin color($property, $var, $fallback){
-    #{$property}: $fallback; 
+    #{$property}: $fallback;
     #{$property}: var($var, $fallback);
 }
 
@@ -36,6 +40,15 @@ $theme-dark-bg-color:#262626;
     --first-text-color: #{$theme-dark-first-text-color};
     --second-text-color:#{$theme-dark-second-text-color};
     --bg-color: #{$theme-dark-bg-color};
+
+    p code,
+    li code {
+        color: $theme-dark-code-text-color;
+        background-color: $theme-dark-code-background-color;
+        padding: 2px;
+        font-size: 0.9rem;
+        border-radius: 4px;
+    }
 }
 
 
@@ -51,9 +64,9 @@ body {
     @include color(color, --first-text-color, $theme-light-first-text-color);
 }
 
-p code {
-    color: initial;
-    background-color: #ddd;
+p code,
+li code {
+    background-color: $theme-light-code-background-color;
     padding: 2px;
     font-size: 0.9rem;
     border-radius: 4px;
