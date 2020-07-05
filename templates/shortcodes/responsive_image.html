@@ -1,0 +1,8 @@
+<div class="responsive-picture">
+    <picture>
+        <source srcset="{{resize_image(path=path, height=4000, width=960, op="fit")}}" media="(min-width: 768px)">
+        <source srcset="{{resize_image(path=path, height=4000, width=768, op="fit")}}" media="(min-width: 512px)">
+        <source srcset="{{resize_image(path=path, height=4000, width=512, op="fit")}}" media="(max-width: 512px)">
+        <img src="{{resize_image(path=path, height=4000, width=960, op="fit")}}" style="width:auto;" alt="{{ alt }}">
+    </picture>
+</div>
