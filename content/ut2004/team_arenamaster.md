@@ -1,6 +1,6 @@
 +++
 title = "Team ArenaMaster"
-weight = 1
+weight = 2
 +++
 
 # Team ArenaMaster
@@ -22,7 +22,6 @@ Here are the creators of this great mod:
 - Download the file from the [original website](https://www.utzone.de/forum/downloads.php?do=file&id=981) or from our [local mirror](3spn_v3.141.7z).
 - Delete all previous versions of `*.int`, `*.u`, and `*.ucl` files from `$GAME_DIR\System\` folder.
 - Unzip the archive and place all files in the `$GAME_DIR\System\` folder.
-
 - Add these two lines to your `System\UT2004.ini` under their respective category:
 
 ```ini

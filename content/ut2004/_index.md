@@ -17,7 +17,7 @@ First of all you need to install these prerequisites:
 
 ## Installation
 
-1. Download the dedicated server version of UT2004 from [fileplanet](https://www.fileplanet.com/archive/p-18877/Unreal-Tournament-2004-Server-v3186) or the locally [mirrored file](DedicatedServer3339-BonusPack.zip).  
+1. Download the dedicated server version of UT2004 from [fileplanet](https://www.fileplanet.com/archive/p-18877/Unreal-Tournament-2004-Server-v3186) or the locally [mirrored file](https://github.com/Nukesor/selfhosted-gaming/releases/download/ut2004/DedicatedServer3339-BonusPack.zip).  
     The original software has been developed by Epic Games & Digital Extremes. The license included in the archive allows to "... exchange the Server-Only Software at no charge among other end-users and distribute them to others over the Internet, ...".
 1. Create a new folder, where you want the game installed.
 1. Unzip the downloaded archive into this folder.
@@ -27,18 +27,42 @@ First of all you need to install these prerequisites:
 
 The server is started via the `ucc-bin` binary.
 
-The first parameter is the name of the map in combination with all game configuration parameters.
-These are added with the pattern `?name=value`.
-Sadly, this is super confusing, since there's no space allowed between them.
+The first parameter is the name of the map in combination with all game configuration parameters, which are added using the pattern `?name=value`.
+
+E.g. `"DM-Asbestos?game=XGame.xCTFGame?modifier=BonusPack.MutCrateCombo"`.
+
+The full command looks like this:
 
 ``` bash
 ./ucc-bin server \
-    "DM-Asbestos?modifier=BonusPack.MutCrateCombo \
+    "DM-Asbestos?game=XGame.xCTFGame?modifier=BonusPack.MutCrateCombo" \
     ini=UT2004.ini \
     -nohomedir
 ```
 
 ## Configuration
+
+### Map Names
+
+You can find all available map names in the `$GAME_DIR\System\UT2004.ini` file.
+There's a list of maps for each game mode.
+
+The following is the list for all maps of the game mode `DeathMatch`:
+
+```ini
+[XInterface.MapListDeathMatch]
+Maps=DM-RRAJIGAR
+Maps=DM-RANKIN
+Maps=DM-DE-GRENDELKEEP
+Maps=DM-DE-IRONIC
+Maps=DM-DE-OSIRIS2
+Maps=DM-GESTALT
+Maps=DM-IRONDEITY
+Maps=DM-METALLURGY
+Maps=DM-Compressed
+...
+...
+```
 
 ### Game Modes
 
