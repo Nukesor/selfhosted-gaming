@@ -11,38 +11,30 @@
     </head>
 
     <body>
+        <div class="main_header">{{ config.title }}</div>
+        <h2 class="main_hero">{{ config.description}}</h2>
         <nav>
-            <div id="subnav">
-                <form class="theme-selector">
-                    <button type="button" id="theme-light-button" class="theme-button" onclick="enableTheme('light', true)">&#9706;</button>
-                    <button type="button" id="theme-dark-button"  class="theme-button enabled" onclick="enableTheme('dark', true)">&#9705;</button>
-                </form>
-                <a href="/search">&#8981;</a>
-            </div>
-
             {% block nav %}
+            {{ macro::navigation() }}
             <ul id="breadcrumbs">
                 {% for tax in config.taxonomies %}
                 <li>/<a href="/{{tax.name}}/">{{tax.name}}</a>&nbsp;</li>
                 {% endfor %}
             </ul>
-            <h1>{{ config.title }}</h1>
-            {{ macro::tree() }}
             {% endblock nav %}
         </nav>
 
         <main>
             {% block content %}
-
             {% set_global header_count = 0 %}
             {% for h2 in section.toc %}
-            {% set_global header_count = header_count + 1 %}
-            {% for h3 in h2.children %}
-            {% set_global header_count = header_count + 1 %}
-            {% for h4 in h3.children %}
-            {% set_global header_count = header_count + 1 %}
-            {% endfor %}
-            {% endfor %}
+                {% set_global header_count = header_count + 1 %}
+                {% for h3 in h2.children %}
+                    {% set_global header_count = header_count + 1 %}
+                    {% for h4 in h3.children %}
+                        {% set_global header_count = header_count + 1 %}
+                    {% endfor %}
+                {% endfor %}
             {% endfor %}
 
             {% if header_count > 4 %}
@@ -67,16 +59,5 @@
         </main>
 
         <script type="text/javascript" src="{{ get_url(path="themes.js") | safe }}"></script>
-
-        <script>
-            function burger() {
-                var x = document.getElementById("bger");
-                if (x.style.display === "block") {
-                    x.style.display = "none";
-                } else {
-                    x.style.display = "block";
-                }
-            }
-        </script>
     </body>
 </html>

@@ -1,0 +1,44 @@
+.main_header {
+    display: flex;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 5rem;
+}
+
+.main_hero {
+    display: flex;
+    justify-content: center;
+    color: $green;
+}
+
+h1, h2, h3, h4, h5 {
+    .anchor {
+        visibility: hidden;
+        text-decoration: none;
+        border-bottom-color: transparent;
+        cursor: pointer;
+        padding-left:1rem;
+        color: $light-gray;
+    }
+
+    &:hover {
+        .anchor {
+            visibility: visible;
+        }
+    }
+}
+
+
+h2, h3 {
+    font-weight: 600;
+    line-height:120%;
+    margin-bottom:0.5rem;
+}
+
+h1 {
+    font-size:2rem;
+    line-height:1;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin:1rem 0;
+}

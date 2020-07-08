@@ -1,0 +1,26 @@
+@import "colors";
+
+nav {
+    display: flex;
+    flex-flow: column nowrap;
+
+    .navigation_points {
+        display: flex;
+        flex-flow: row wrap;
+        margin: 1rem;
+
+        background-color: #333;
+    }
+
+    .navigation_point {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #breadcrumbs {
+        display: flex;
+        flex-flow: row wrap;
+        font-style:italic;
+    }
+}
