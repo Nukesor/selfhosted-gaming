@@ -1,6 +1,12 @@
 +++
 title = "Team ArenaMaster"
 weight = 2
+date = 2020-07-08
+
+[taxonomies]
+tags = ["arena-shooter", "ut2004", "Unreal-Tournament"]
+categories = ["fps", "first-person-shooter"]
+authors = ["Arne Beer"]
 +++
 
 # Team ArenaMaster

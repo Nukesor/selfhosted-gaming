@@ -12,15 +12,15 @@
 
     <body>
         <div class="main_header">{{ config.title }}</div>
-        <h2 class="main_hero">{{ config.description}}</h2>
+        <div class="main_hero">{{ config.description}}</div>
         <nav>
             {% block nav %}
-            {{ macro::navigation() }}
-            <ul id="breadcrumbs">
-                {% for tax in config.taxonomies %}
-                <li>/<a href="/{{tax.name}}/">{{tax.name}}</a>&nbsp;</li>
-                {% endfor %}
-            </ul>
+                {{ macro::navigation() }}
+                <ul id="breadcrumbs">
+                    {% for tax in config.taxonomies %}
+                        <li>/<a href="/{{tax.name}}/">{{tax.name}}</a>&nbsp;</li>
+                    {% endfor %}
+                </ul>
             {% endblock nav %}
         </nav>
 

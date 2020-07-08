@@ -1,13 +1,21 @@
 +++
-title = "UT2004"
+title = "Unreal Tournament 2004"
 sort_by = "weight"
+date = 2020-07-08
+
+[taxonomies]
+tags = ["arena-shooter", "ut2004", "Unreal-Tournament"]
+categories = ["fps", "first-person-shooter"]
+authors = ["Arne Beer"]
 +++
 
-# UT2004 (aka UT2k4)
+Unreal Tournament 2k4 is a timeless classic arena shooter.
+People loved it back in the day and there's still a quite active community and full servers.
 
-Factorio's server setup is super straight forward. They offer a free dedicated server download, that's open to everyone.
+It's fast paced, action-packed and fun to play.
+Especially on lans or online with your friends.
 
-You can find the download on their [homepage](https://factorio.com/download).
+The server setup however can be a little tricky.
 
 ## Prerequisites
 

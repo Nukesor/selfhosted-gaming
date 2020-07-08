@@ -1,14 +1,18 @@
 +++
 title = "Garry's Mod"
 sort_by = "weight"
-insert_anchor_links = "right"
+date = 2020-06-28
+
+[taxonomies]
+tags = ["garrys mod", "server-setup"]
+categories = ["fps", "first-person-shooter", "fun"]
+authors = ["Arne Beer"]
 +++
 
-# Garry's Mod
-
-Valve's game servers are know to not be the most user interface friendly ones.
+Valve's game servers are not known to have the most user friendly interfaces and documentation.  
 This main article will give you an idea on how to setup up a Garry's Mod server.
-Information to specific game modes, as well as configurations and server commands can be found in their respective sub-category.
+
+Mods and specific game modes have their own section and can be found either via the navigation or our search function.
 
 ## Prerequisites
 
@@ -61,15 +65,13 @@ You therefore might need to do some researching yourself, depending on which kin
 ## Setting up Steam Workshop Collections
 
 It's a really good idea, to either use or create a steam workshop collection.
-This way, you have an easy way of adding and removing workshop content via the web interface.
-
+This way, you have an easy way of adding and removing workshop content via the web interface.  
 Otherwise you would have to manually download, copy, delete and update your server every time something changes.
 
 Another side-effect is that your friends can easily download your required mods via Steam, which is **at least** a hundred times faster than via Garry's Mod.
 Their download speed is excruciatingly slow.
 
-If you still don't want to use workshop collections, please skip to the next sub section.
-
+If you still don't want to use workshop collections, please skip to the next sub section.  
 Otherwise, here's what you have to do:
 
 **1. Get your Steam Web API key**

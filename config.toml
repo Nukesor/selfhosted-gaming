@@ -15,5 +15,11 @@ highlight_theme = "kronuz"
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = true
 
+taxonomies = [
+    {name = "authors", rss = true},
+    {name = "tags", rss = true},
+    {name = "categories", rss = true},
+]
+
 [extra]
 # Put all your custom variables here

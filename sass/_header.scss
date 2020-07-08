@@ -1,33 +1,30 @@
 .main_header {
-    display: flex;
-    justify-content: center;
+    text-align: center;
     font-weight: 800;
     font-size: 5rem;
 }
 
 .main_hero {
-    display: flex;
-    justify-content: center;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
     color: $green;
 }
 
 h1, h2, h3, h4, h5 {
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+
     .anchor {
-        visibility: hidden;
+        visibility: visible;
         text-decoration: none;
         border-bottom-color: transparent;
         cursor: pointer;
         padding-left:1rem;
         color: $light-gray;
     }
-
-    &:hover {
-        .anchor {
-            visibility: visible;
-        }
-    }
 }
-
 
 h2, h3 {
     font-weight: 600;

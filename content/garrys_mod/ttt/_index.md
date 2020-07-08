@@ -2,18 +2,17 @@
 title = "Trouble in Terrorist Town"
 sort_by = "weight"
 insert_anchor_links = "right"
+date = 2020-06-28
+
+[taxonomies]
+tags = ["garrys mod", "trouble in terroristtown"]
+categories = ["fps", "first-person-shooter", "fun"]
+authors = ["Arne Beer"]
 +++
 
 
-# Trouble in Terrorist Town
-
-
 This section deals with setting up a Garry's Mod server for the game mode _Trouble in Terrorist Town_ (TTT).
-
-
-## Prerequisites
-
-Follow the installation instruction for Garry's Mod server in the [Garry's Mod section](/garrys_mod/).
+Before you start with this setup, please make sure that you followed the installation instruction for Garry's Mod server in the [Garry's Mod](/garrys_mod/) section.
 
 ## Installation
 
@@ -32,17 +31,16 @@ $GAME_DIR
 
 ## Configuration
 
-TTT offers some [extensive docs](http://www.troubleinterroristtown.com/config-and-commands/convars) on which variables exist and what they do.
-
-You can find a mirror of this site on the left in the navigation menu.
+TTT offers some [extensive docs](http://www.troubleinterroristtown.com/config-and-commands/convars) on which variables exist and what they do.  
+You can also find a mirror of complete configuration description [over here](@/garrys_mod/ttt/configuration.md).
 
 Many mods and workshop collections bring their own variables for configuration.
 You have to read those and inform yourself about the possible configuration options.
 
 ## Run the Server
 
-For the server to run, you have to know the map name of at least one map that's compatible with TTT.
-Such a map name is for instance `ttt_rooftops_a2`. They usually begin with `ttt_`.
+For the server to run, you have to know the map name of at least **one** map that's compatible with TTT.  
+An example map name is `ttt_rooftops_a2`. They usually begin with `ttt_`.
 This will be referenced as `$MAP_NAME`.
 
 Starting the server with a steam workshop collection:
@@ -68,5 +66,5 @@ cd $GAME_DIR
     -usercon \
     +gamemode terrortown \
     +hostname THIS_IS_THE_SERVER_NAME_THATS_DISPLAYED_IN_GAME  \
-    +map $MAP_NAME \
+    +map $MAP_NAME
 ```

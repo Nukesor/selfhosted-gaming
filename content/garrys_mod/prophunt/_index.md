@@ -1,19 +1,17 @@
 +++
-title = "Garry's Mod"
+title = "Prophunt"
 sort_by = "weight"
 insert_anchor_links = "right"
+date = 2020-07-01
+
+[taxonomies]
+tags = ["garrys mod", "trouble in terroristtown", "hide-and-seek"]
+categories = ["fps", "first-person-shooter", "fun"]
+authors = ["Arne Beer"]
 +++
 
-# Prophunt
-
-
 This section deals with setting up a Garry's Mod server for the game mode _Prophunt_.
-
-
-## Prerequisites
-
-Follow the installation instruction for Garry's Mod server in the [Garry's Mod section](/garrys_mod/).
-
+Before you start with this setup, please make sure that you followed the installation instruction for Garry's Mod server in the [Garry's Mod](/garrys_mod/) section.
 
 ## Installation
 
@@ -35,7 +33,7 @@ $GAME_DIR
 
 I couldn't find any configuration details for Prophunt.
 
-Please create an issue or a PR, if you can find any information about this.
+Please create an issue or a pull request, if you can find any information about this.
 
 
 ## Run the Server

@@ -3,10 +3,7 @@ title = "General Best Practices"
 weight = 1
 +++
 
-# Best Practices
-
-This page aims to introduce you to some best-practices, when dealing with game servers.
-
+This page aims to introduce you to some best-practices, when dealing with game servers.  
 In the following I'll cover several tools and examples that might help you to maintain your game servers.
 
 ## Terminal multiplexer

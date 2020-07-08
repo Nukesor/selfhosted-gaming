@@ -1,5 +1,5 @@
 +++
-title = "Selfhosted Game Servers"
+title = "Self-hosted Gaming"
 sort_by = "weight"
 insert_anchor_links = "right"
 +++
