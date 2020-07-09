@@ -1,30 +1,76 @@
 @import "colors";
+@import "helpers";
 
 nav {
     display: flex;
     flex-flow: column nowrap;
 
-    .navigation_points {
-        display: flex;
-        flex-flow: row wrap;
-        margin: 1rem;
+    .navigation-bar {
+        min-width: auto;
+        margin-bottom: 1rem;
 
-        background-color: #333;
-    }
-
-    .navigation_point {
         display: flex;
-        align-items: center;
+        flex-flow: column wrap;
         justify-content: center;
+
+        @include tablet-desktop {
+            flex-flow: row wrap;
+            font-size: 1.3rem;
+        }
     }
 
-    #breadcrumbs {
+    .navigation-button {
+        display: flex;
+        justify-content: center;
+        padding: 0 0.75rem;
+        margin: 0 0.12rem;
+
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 2px;
+        border-color: $gray;
+
+        background: $dark-gray;
+
+        #{$a-tags} {
+            color: $white;
+        }
+
+        #{$a-tags-hover} {
+            color: $white;
+        }
+    }
+
+    .breadcrumbs {
         display: flex;
         flex-flow: row wrap;
         font-style: italic;
+        justify-content: center;
 
-        .current_page, a {
+        .current-page, a {
             margin-left: 0.5rem;
         }
+    }
+
+    .taxonomies {
+        display: flex;
+        flex-flow: row wrap;
+        font-size: 1rem;
+
+        date {
+            color: $green;
+        }
+    }
+}
+
+
+.table-of-contents {
+    list-style: none;
+    color: $green;
+    margin-top: 1rem;
+
+    ul {
+        margin-left: 3rem;
+        list-style: none;
     }
 }

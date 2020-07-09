@@ -16,13 +16,12 @@ Mods and specific game modes have their own section and can be found either via 
 
 ## Prerequisites
 
-First of all you need to install these prerequisites:
-
-- `steamcmd`
+First of all you need to install `steamcmd`.  
+`steamcmd` is used to install games from the commandline without any kind of visual user interface.
 
 ## Installation
 
-1. Create a directory where you want your game server to be. This will be referenced as `$GAME_DIR`.
+1. Create a directory where you want your game server to be. This will be referred to as `$GAME_DIR`.
 1. Install the server via `steamcmd`.  
    **IMPORTANT:** `$GAME_DIR` has to be the **absolute** path of the directory.
 
@@ -100,7 +99,7 @@ Otherwise, here's what you have to do:
 - Now get the id that's in the URL.
     The URL looks like this `https://steamcommunity.com/sharedfiles/filedetails/?id=2090357275`.  
     The Id for this workshop is `2090357275`.  
-    This Id will be referenced as `$WORKSHOP_ID`.  
+    This Id will be referred to as `$WORKSHOP_ID`.  
 
 You are now capable of creating workshop collections.
 You could have, for instance, a collection for TTT and another one for Prophunt.

@@ -1,8 +1,10 @@
 @charset "utf-8";
 
 @import "colors";
+@import "code";
 @import "icons";
 @import "header";
+@import "helpers";
 @import "media";
 @import "navigation";
 @import "search";
@@ -14,78 +16,37 @@ html {
 }
 
 body {
+    display: flex;
+    flex-flow: column nowrap;
+
     text-rendering: optimizeLegibility;
     font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;
     font-size: 0.9375rem;
-    line-height:1.5;
-    display: flex;
-    flex-flow: column nowrap;
-    hyphens: auto;
-    background: $black;
-    align-items: center;
-
     color: $white;
+    line-height:1.5;
+    hyphens: auto;
+
+    background: $black;
 }
 
-p code,
-li code {
-    background-color: $code-background;
-    color: $code-color;
-    padding: 1px 4px;
-    font-size: 0.9rem;
-    border-radius: 4px;
-}
-
-@keyframes fade-in {
-    0% {
-        opacity: 0;
-    }
-
-    50% {
-        opacity:0.8;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-pre {
-    overflow: auto;
-    font:1rem Consolas, monospace;
-    padding:1rem;
-    margin:0 0 1rem 0;
-    border-radius: 4px;
-}
-
-a:link {
+#{$a-tags} {
+    color: $green;
     text-decoration: none;
-    color: $green;
-}
-
-a:hover {
-    color: $black;
-    background: $light-gray;
-}
-
-a:visited {
-    color: $green;
 }
 
 main {
-    width:48vw;
-    padding:2vw;
-    max-width:60rem;
+    padding: 1rem;
     display: flex;
     flex-flow: column nowrap;
+    max-width:45em;
 
     ol, ul {
-        margin: 0 0 1rem 1.5rem;
+        margin-bottom: $bottom-spacing;
     }
 
     p {
-        padding: 0 2rem;
-        margin:0 0 1rem 0;
+        text-align: center;
+        margin: 0 0 $bottom-spacing 0;
     }
 
     article {
@@ -95,29 +56,4 @@ main {
             color: $green;
         }
     }
-}
-
-#taxonomies {
-    display: flex;
-    flex-flow: row wrap;
-    font-size: 1rem;
-
-    date {
-        color: $green;
-    }
-}
-
-#toc {
-    list-style: none;
-    color: $green;
-    margin-top: 1rem;
-
-    ul {
-        margin-left: 3rem;
-        list-style: none;
-    }
-}
-
-#mobile {
-    display: none;
 }

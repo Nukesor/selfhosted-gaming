@@ -14,9 +14,9 @@ authors = ["Arne Beer"]
 This is a Backup of the official TTT configuration page.
 I'm not the creator of this collection, it simply serves as a backup in case the original project is shut down.
 
-Here is the link to the original page: http://www.troubleinterroristtown.com/config-and-commands/convars
+Check out the [original page](http://www.troubleinterroristtown.com/config-and-commands/convars).
 
-All credits go to the creators of this page!
+All credits go to the creators of that page!
 
 # Round structure
 

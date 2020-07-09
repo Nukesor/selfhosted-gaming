@@ -1,61 +1,68 @@
-{% macro navigation() %}
-    <a href="javascript:void(0);" onclick="burger()" id="mobile">&#9776;</a>
-    <div class="navigation_points" id="bger">
-        {% for subsection in section.subsections | sort %}
-            {% set subsection_item = get_section(path=subsection) %}
-            <div class="navigation_point">
-                <img class="icon" src="">&nbsp;<a href="{{ subsection_item.permalink | safe }}">{{ subsection_item.title  }}</a>
-            </div>
-        {% endfor %}
+{% macro navigation(page, breadcrumbs=true, include_site=false) %}
+    {% if page.subsections %}
+        <div class="navigation-bar">
+            {% for subsection in page.subsections | sort %}
+                {% set subsection_item = get_section(path=subsection) %}
+                <div class="navigation-button">
+                    <a class="navigation-link" href="{{ subsection_item.permalink | safe }}">{{ subsection_item.title  }}</a>
+                </div>
+            {% endfor %}
 
-        <div type="button" class="icon search"></div>
-    </div>
-    <div class="children_pages" id="bger">
-        {% for subpage in section.pages %}
-            <div class="child_page">
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAB3RJTUUH5AUDFDoqfmnPqQAAABl0RVh0Q29tbWVudABDcmVhdGVkIHdpdGggR0lNUFeBDhcAAAC6SURBVEjH7ZTBCcIwFIa/lO6hA7iA6BCO4AZe/xHeCF49C4I7VOfQk2PUS4QibUzahiL0h0AOj7x87wtx+JhZTWQkLYFnTG1Bj5jZBVjE1LpvAknux+F1CkkvgkazB7DJ0kDSHniZ2RFY5yA4SToAKzO7d5EUoVk3V0fZWdLO11dt4gc58Ll62a1OBr2igJ8tcBuLoO0S1Wdfpt40lTALQTNlYI5ujAbTEaT8riHi2cHs4B8dpM5+coI3MpVSlNj0qyUAAAAASUVORK5CYII=" width="16px" />&nbsp;<a href="{{ subpage.permalink | safe }}">{{ subpage.title  }}</a>
-            </div>
-        {% endfor %}
-    </div>
+            <div type="navigation-button" class="icon search"></div>
+        </div>
+        <div class="navigation-bar">
+            {% for subpage in page.pages %}
+                <div class="navigation-button">
+                    <a href="{{ subpage.permalink | safe }}">{{ subpage.title  }}</a>
+                </div>
+            {% endfor %}
+        </div>
+    {% endif %}
+
+    {% if breadcrumbs %}
+        <div class="breadcrumbs">
+            {% for parent in page.ancestors %}
+                {% set s = get_section(path=parent, include_pages=false) %}
+                <a href="{{s.permalink}}">
+                    {% if not loop.first %}→{% endif %} {{s.title}}
+                </a>
+            {% endfor %}
+            {% if include_site %}
+                <div class="current-page">→ {{ page.title }}</div>
+            {% endif %}
+        </div>
+    {% endif %}
 {% endmacro navigation %}
 
-{% macro breadcrumbs(page, include_site=false) %}
-    <div id="breadcrumbs">
-        {% for parent in page.ancestors %}
-            {% set s = get_section(path=parent, include_pages=false) %}
-            <a href="{{s.permalink}}">
-                {% if not loop.first %}→{% endif %} {{s.title}}
-            </a>
-        {% endfor %}
-        {% if include_site %}
-            <div class="current_page">→ {{ page.title }}</div>
-        {% endif %}
-    </div>
-{% endmacro breadcrumbs %}
-
 {% macro taxonomies(page) %}
-    <div id="taxonomies">
-        {% if section.date %}
-        <date>{{ section.date | date(format="%d.%m.%Y") }}</date>
+    <div class="taxonomies">
+        {% if page.date %}
+        <date>{{ page.date | date(format="%d.%m.%Y") }}</date>
         {% endif %}
 
-        {% if section.taxonomies.authors %}
+        {% if page.taxonomies.authors %}
         <ul>
-            {% for author in section.taxonomies.authors %}
+            {% for author in page.taxonomies.authors %}
             <li><a href="{{ get_taxonomy_url(kind="authors", name=author) | safe }}" >{{ author }}</a></li>
             {% endfor %}
         </ul>
         {% endif %}
 
-        {% if section.taxonomies.tags %}
+        {% if page.taxonomies.tags %}
         <ul>
-            {% for tag in section.taxonomies.tags %}
+            {% for tag in page.taxonomies.tags %}
             <li><a href="{{ get_taxonomy_url(kind="tags", name=tag) | safe }}" >#{{ tag }}</a></li>
             {% endfor %}
         </ul>
         {% endif %}
     </div>
 {% endmacro taxonomies %}
+
+{% macro top_level_taxonomies() %}
+    {% for tax in config.taxonomies %}
+        <div><a href="{{tax.name}}">{{ tax.name }}</a></div>
+    {% endfor %}
+{% endmacro top_level_taxonomies %}
 
 {% macro table_of_content(page) %}
     {% set_global header_count = 0 %}
@@ -70,21 +77,21 @@
     {% endfor %}
 
     {% if header_count > 4 %}
-    <ul id="toc">
-        {% for h2 in page.toc %}
-        <li>
-            <a href="{{ h2.permalink | safe }}">{{ h2.title }}</a>
-            {% if h2.children %}<ul>
-                {% for h3 in h2.children %}
+        <ul class="table-of-content">
+            {% for h2 in page.toc %}
                 <li>
-                    <a href="{{ h3.permalink | safe }}">{{ h3.title }}</a>
+                    <a href="{{ h2.permalink | safe }}">{{ h2.title }}</a>
+                    {% if h2.children %}
+                        <ul>
+                            {% for h3 in h2.children %}
+                                <li>
+                                    <a href="{{ h3.permalink | safe }}">{{ h3.title }}</a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
                 </li>
-                {% endfor %}
-            </ul>
-            {% endif %}
-        </li>
-        {% endfor %}
-    </ul>
+            {% endfor %}
+        </ul>
     {% endif %}
 {% endmacro table_of_content %}
-

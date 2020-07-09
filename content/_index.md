@@ -24,17 +24,19 @@ These include:
 
 ## The Project
 
-This Project is **open-source** on [Github](https://github.com/nukesor/selfhosted-gaming) and is supposed to act as an **archive** and a well of knowledge.
+This project is **open-source** on [Github](https://github.com/nukesor/selfhosted-gaming).
+The idea is to create an **archive** and a well of knowledge for self-hosted game servers.
 
-Looking for guides on how to set up a specific dedicated gaming server can be a real hassle.
+Looking for hints on how to set up a specific dedicated gaming server can be a real hassle.
+It sometimes feels as if you're digging through archives to find some arcane knowledge for summoning a terrible abomination. 
 The information you're looking for is are often spread among a variety of forums, Steam community posts, and blog posts.
 
-Those infos are often outdated and forums, as well as blogs, go offline all the time.
+These posts are often outdated or vague. On top of this forums and blogs go offline all the time.
 
-That's why I decided to bring this project to live.
-Let's keep it in one place, where everybody can contribute to it, where it's easy make a quick backup of **everything** and on a website that will most likely not go offline in the next 50+ years.
-
+That's why I decided to start this project.
+Let's keep everything we learned in one place.
+A place where everybody can easily contribute to it, where it's easy make a quick backup of **everything** and on a website that will most likely not go offline in the next 50+ years.
 
 So, if you have some hidden knowledge on how to set up a specific game, please create an issue or pull request on the official [repository](https://github.com/nukesor/selfhosted-gaming).
 
-It's very much appreciated an it'll most likely help many other desperate and annoyed game server operators out there.
+It's very much appreciated and it'll most likely help many other desperate and annoyed server operators out there.

@@ -1,35 +1,46 @@
-.main_header {
+@import "helpers";
+
+.main-header {
     text-align: center;
+    font-size: 2rem;
     font-weight: 800;
-    font-size: 5rem;
+    line-height: 1.2em;
+    margin-top: 1rem;
+
+    @include tablet-desktop {
+        font-size: 5rem;
+    }
 }
 
-.main_hero {
+.main-hero {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 400;
     color: $green;
+    margin-bottom: 1.5rem;
+
+    @include tablet-desktop {
+        font-size: 1.5rem;
+    }
 }
 
 h1, h2, h3, h4, h5 {
     text-align: center;
-    padding-top: 2rem;
-    padding-bottom: 1rem;
+    margin-top: 2*$bottom-spacing;
+    margin-bottom: $bottom-spacing;
 
     .anchor {
+        padding-left:1rem;
         visibility: visible;
         text-decoration: none;
-        border-bottom-color: transparent;
         cursor: pointer;
-        padding-left:1rem;
-        color: $light-gray;
+        border-bottom-color: transparent;
     }
-}
 
-h2, h3 {
-    font-weight: 600;
-    line-height:120%;
-    margin-bottom:0.5rem;
+    .anchor:hover {
+        color: $black;
+        background-color: $green;
+    }
 }
 
 h1 {
@@ -37,5 +48,9 @@ h1 {
     line-height:1;
     font-weight: 700;
     text-transform: uppercase;
-    margin:1rem 0;
+}
+
+h2, h3 {
+    font-weight: 600;
+    line-height:120%;
 }

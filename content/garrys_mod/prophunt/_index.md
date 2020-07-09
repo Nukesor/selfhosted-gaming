@@ -40,7 +40,7 @@ Please create an issue or a pull request, if you can find any information about 
 
 For the server to run, you have to know the map name of at least one map that's compatible with prophunt.
 Such a map name is for instance `ph_indoorpool`. They usually begin with `ph_`.
-This will be referenced as `$MAP_NAME`.
+This will be referred to as `$MAP_NAME`.
 
 CLI-configuration:
 

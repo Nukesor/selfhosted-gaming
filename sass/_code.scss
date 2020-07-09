@@ -1,0 +1,18 @@
+p code,
+li code {
+    background-color: $code-background;
+    color: $code-color;
+    padding: 1px 4px;
+    font-size: 0.9rem;
+    border-radius: 4px;
+}
+
+pre {
+    min-width: 0;
+    overflow: auto;
+
+    font:1rem Consolas, monospace;
+    padding:1rem;
+    margin:0 0 1rem 0;
+    border-radius: 4px;
+}

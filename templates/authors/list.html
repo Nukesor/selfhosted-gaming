@@ -15,11 +15,5 @@
             <li><a href="{{ term.permalink | safe }}">{{ term.name }}</a>&nbsp;[{{ term.pages | length }}]</li>
             {% endfor %}
         </ul>
-        <select id="mobile" onChange="window.location.href=this.value" name="Taxonomies" >
-            <option disabled selected>{{ taxonomy.name }}</option>
-            {% for term in terms %}
-            <option value="{{ term.permalink | safe }}">{{ term.name }}&nbsp;[{{ term.pages | length }}]</option>
-            {% endfor %}
-        </select>
     {% endif %}
 {% endblock content %}

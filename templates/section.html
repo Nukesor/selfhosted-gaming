@@ -5,14 +5,12 @@
 {% endblock title %}
 
 {% block nav %}
-    {{ macro::breadcrumbs(page=section, include_site=true) }}
-    {{ macro::navigation() }}
+    {{ macro::navigation(page=section, include_site=true) }}
 {% endblock nav %}
 
 {% block content %}
     <h1>{{ section.title }}</h1>
     {{ macro::taxonomies(page=section) }}
-
     {{ macro::table_of_content(page=section) }}
 
     <article>

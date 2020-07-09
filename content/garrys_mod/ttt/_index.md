@@ -41,7 +41,7 @@ You have to read those and inform yourself about the possible configuration opti
 
 For the server to run, you have to know the map name of at least **one** map that's compatible with TTT.  
 An example map name is `ttt_rooftops_a2`. They usually begin with `ttt_`.
-This will be referenced as `$MAP_NAME`.
+This will be referred to as `$MAP_NAME`.
 
 Starting the server with a steam workshop collection:
 ```bash
