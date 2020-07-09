@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "https://selfhostedgaming.com/"
+base_url = "https://selfhosted-gaming.com/"
 
 title = "Self-hosted Gaming"
 description = "Tutorials for Dedicated Game Servers"
