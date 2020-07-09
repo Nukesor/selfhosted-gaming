@@ -11,8 +11,8 @@ authors = ["Arne Beer"]
 +++
 
 
-This section deals with setting up a Garry's Mod server for the game mode _Trouble in Terrorist Town_ (TTT).
-Before you start with this setup, please make sure that you followed the installation instruction for Garry's Mod server in the [Garry's Mod](/garrys_mod/) section.
+This section deals with setting up a Garry's Mod server for the game mode _Trouble in Terrorist Town_ (TTT).  
+Before you start with this setup, please make sure you followed the instructions for [Garry's Mod server](/garrys_mod/).
 
 ## Installation
 
