@@ -4,7 +4,7 @@ sort_by = "weight"
 insert_anchor_links = "right"
 +++
 
-# Hello everyone!
+## Hello everyone!
 
 This site aims to be a guide for setting up your own dedicated game servers.
 Just use the **navigation bar** or the **search** function to look for a specific game.
@@ -12,7 +12,7 @@ Just use the **navigation bar** or the **search** function to look for a specifi
 If you cannot find the game, think about [contributing](https://github.com/nukesor/selfhosted-gaming) to the project.
 
 
-# Best practices
+## Best practices
 
 Whenever you're done with your server setup, check out the [best practices](/best-practices/).
 There're examples for some best practices, that should spare you some headache and prevent you from some common mistakes!
@@ -22,7 +22,7 @@ These include:
 - Game management scripts
 - Managing your games via a service manager
 
-# The Project
+## The Project
 
 This Project is **open-source** on [Github](https://github.com/nukesor/selfhosted-gaming) and is supposed to act as an **archive** and a well of knowledge.
 
