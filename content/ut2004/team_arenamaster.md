@@ -9,13 +9,16 @@ categories = ["fps", "first-person-shooter"]
 authors = ["Arne Beer"]
 +++
 
-# Team ArenaMaster
-
 Team ArenaMaster is a great mod for competetive arena experience.
+Every player starts with the same loadout at the start of each round.
+The result is a very balanced match, where the player's chance of winning is solely depending on their skill.
+
+To prevent a player or team from roflstomping, a neat balancing mechanism is added.
+This mechanism will spawn players with less health, the further they're in the lead compared to the other players of the match.
 
 The original mod page can be found over [here](https://www.utzone.de/forum/downloads.php?do=file&id=981).
 
-Here are the creators of this great mod:
+These are the creators of this great mod:
 
 - Michael "MaStur" Massey - Project Lead
 - Eric "Dizzid" Chavez - Lead Programmer
