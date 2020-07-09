@@ -13,7 +13,7 @@ They allow you to run commands on your headless server in detached shell.
 
 This means, that you can start the server, exit your current shell session, ssh back onto your server and enter the **same** session you left a few hours ago.
 
-<div class="gif">
+<div class="gif" alt="Tmux dedicated game server tutorial example">
     <img src="/best_practices/tmux_demo.gif" style="width:auto;"></img>
 </div>
 
@@ -27,7 +27,7 @@ I highly recommend to write some helper scripts for your game servers.
 
 Those can be simple bash files, but they'll help you to remove repetitive tasks, such as starting/stopping/updating/creating backups.
 
-<div class="gif">
+<div class="gif" alt="Factorio dedicated server helper bash script">
     <img src="/best_practices/helper_script_demo.gif" style="width:auto;"></img>
 </div>
 
