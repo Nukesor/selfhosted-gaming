@@ -5,14 +5,7 @@
 {% endblock title %}
 
 {% block nav %}
-    <ul id="breadcrumbs">
-        {% for parent in page.ancestors %}
-            {% set s = get_section(path=parent, include_pages=false) %}
-            <li>
-                <a href="{{s.permalink}}">{{s.title}}</a>
-            </li>
-        {% endfor %}
-    </ul>
+    {{ macro::breadcrumbs(page=page) }}
 {% endblock nav %}
 
 {% block content %}

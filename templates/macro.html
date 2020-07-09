@@ -19,6 +19,22 @@
     </div>
 {% endmacro navigation %}
 
+{% macro breadcrumbs(page, include_site=false) %}
+    <div id="breadcrumbs">
+        {% for parent in page.ancestors %}
+            {% set s = get_section(path=parent, include_pages=false) %}
+            <a href="{{s.permalink}}">
+                {% if not loop.first %}→{% endif %} {{s.title}}
+            </a>
+        {% endfor %}
+        {% if include_site %}
+            <div class="current_page">→ {{ page.title }}</div>
+        {% endif %}
+    </div>
+{% endmacro breadcrumbs %}
+
+
+
 {% macro taxonomies(page) %}
     <div id="taxonomies">
         {% if section.date %}

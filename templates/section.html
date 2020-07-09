@@ -5,13 +5,7 @@
 {% endblock title %}
 
 {% block nav %}
-    <ul id="breadcrumbs">
-        {% for parent in section.ancestors %}
-            {% set s = get_section(path=parent, include_pages=false) %}
-            <li><a href="{{s.permalink}}">{{s.title}}</a>&nbsp;&#8594;&nbsp; </li>
-        {% endfor %}
-        <li>{{ section.title }}</li>
-    </ul>
+    {{ macro::breadcrumbs(page=section, include_site=true) }}
     {{ macro::navigation() }}
 {% endblock nav %}
 
