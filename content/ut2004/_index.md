@@ -190,11 +190,11 @@ adminlogin user password
 ```
 
 
-### Full example command
+## Full example command
 
 ``` bash
 ./ucc-bin server \
-    "DM-Asbestos?game=XGame.xDeathMatch?AdminName=your_name?AdminPassword=your_pass?modifier=XGame.MutRegen \
+    "DM-Asbestos?game=XGame.xDeathMatch?AdminName=your_name?AdminPassword=your_pass?modifier=XGame.MutRegen" \
     ini=UT2004.ini \
     -nohomedir
 ```
