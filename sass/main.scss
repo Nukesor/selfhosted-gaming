@@ -46,6 +46,7 @@ main {
     margin: 0 auto;
 
     ol, ul, pre {
+        hyphens: none;
         margin-bottom: $bottom-spacing;
     }
 
