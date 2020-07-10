@@ -22,6 +22,7 @@ body {
     color: $white;
     line-height:1.5;
     hyphens: auto;
+    margin: 0;
 
     background: $black;
 }
@@ -41,11 +42,6 @@ main, header, nav {
 main {
     padding: 0 1rem;
 
-    .main-container {
-        min-width: 0;
-        max-width: 800px;
-    }
-
     ol, ul {
         margin-bottom: $bottom-spacing;
     }
@@ -56,6 +52,8 @@ main {
     }
 
     article {
+        max-width: 800px;
+        min-width: 0;
         margin:1rem 0 0;
 
         a:visited {
