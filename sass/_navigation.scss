@@ -2,16 +2,12 @@
 @import "helpers";
 
 nav {
-    display: flex;
-    flex-flow: column nowrap;
-
     .navigation-bar {
         min-width: auto;
         margin-bottom: 1rem;
 
         display: flex;
         flex-flow: column wrap;
-        justify-content: center;
 
         @include tablet-desktop {
             flex-flow: row wrap;
@@ -20,8 +16,7 @@ nav {
     }
 
     .navigation-button {
-        display: flex;
-        justify-content: center;
+        text-align: center;
         padding: 0 0.75rem;
         margin: 0 0.12rem;
         min-width: 70vw;

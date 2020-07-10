@@ -1,3 +1,4 @@
+// Inline code styling
 p code,
 li code {
     background-color: $code-background;
@@ -7,10 +8,8 @@ li code {
     border-radius: 4px;
 }
 
+// Code blocks
 pre {
-    min-width: 0;
-    overflow: auto;
-
     font:1rem Consolas, monospace;
     padding:1rem;
     margin:0 0 1rem 0;

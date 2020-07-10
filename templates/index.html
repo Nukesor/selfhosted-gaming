@@ -10,19 +10,24 @@
     </head>
 
     <body>
-        <div class="main-header">{{ config.title }}</div>
-        <div class="main-hero">{{ config.description}}</div>
+        <header>
+            <div class="main-header">{{ config.title }}</div>
+            <div class="main-hero">{{ config.description}}</div>
+        </header>
         <nav>
             {% block nav %}
                 {{ macro::navigation(page=section, breadcrumbs=false) }}
             {% endblock nav %}
         </nav>
         <main>
-            {% block content %}
-                <article>
-                    {{ section.content | safe }}
-                </article>
-            {% endblock content %}
+            <div class="main-container">
+                {% block content %}
+                    <article>
+                        {{ section.content | safe }}
+                    </article>
+                {% endblock content %}
+            </div>
         </main>
     </body>
 </html>
+
