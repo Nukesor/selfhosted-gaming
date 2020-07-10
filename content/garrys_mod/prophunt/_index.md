@@ -56,7 +56,7 @@ cd $GAME_DIR
     -usercon \
     -authkey $STEAM_WEB_API_KEY \
     +gamemode prop_hunt \
-    +hostname THIS_IS_THE_SERVER_NAME_THATS_DISPLAYED_IN_GAME \
+    +hostname IN_GAME_THE_SERVER \
     +map $MAP_NAME \
     +host_workshop_collection $WORKSHOP_ID \
 ```
@@ -69,6 +69,6 @@ cd $GAME_DIR
     -game garrysmod \
     -usercon \
     +gamemode prop_hunt \
-    +hostname THIS_IS_THE_SERVER_NAME_THATS_DISPLAYED_IN_GAME \
+    +hostname IN_GAME_THE_SERVER  \
     +map $MAP_NAME \
 ```

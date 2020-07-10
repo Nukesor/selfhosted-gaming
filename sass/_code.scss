@@ -1,8 +1,10 @@
+@import "helpers";
+
 // Inline code styling
 p code,
 li code {
-    background-color: $code-background;
     color: $code-color;
+    background-color: $code-background;
     padding: 1px 4px;
     font-size: 0.9rem;
     border-radius: 4px;
@@ -10,8 +12,8 @@ li code {
 
 // Code blocks
 pre {
+    overflow: auto;
     font:1rem Consolas, monospace;
-    padding:1rem;
-    margin:0 0 1rem 0;
+    padding: 1rem;
     border-radius: 4px;
 }

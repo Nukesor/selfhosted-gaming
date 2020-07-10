@@ -23,6 +23,7 @@ body {
     line-height:1.5;
     hyphens: auto;
     margin: 0;
+    padding: 0 2rem;
 
     background: $black;
 }
@@ -32,7 +33,7 @@ body {
     text-decoration: none;
 }
 
-main, header, nav {
+header, nav {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
@@ -40,9 +41,11 @@ main, header, nav {
 
 // Main content container
 main {
-    padding: 0 1rem;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
 
-    ol, ul {
+    ol, ul, pre {
         margin-bottom: $bottom-spacing;
     }
 
@@ -52,10 +55,6 @@ main {
     }
 
     article {
-        max-width: 800px;
-        min-width: 0;
-        margin:1rem 0 0;
-
         a:visited {
             color: $green;
         }
