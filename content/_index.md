@@ -7,10 +7,9 @@ insert_anchor_links = "right"
 ## Hello everyone!
 
 This site aims to be a guide for setting up your own dedicated game servers.  
-Use the **navigation bar** or the **search** field to look for a specific game.
+Each game has it's own site, containing a full installation guide and all files that we are allowed to publicly shared.
 
-If you cannot find a game, think about helping out and [contribute](https://github.com/nukesor/selfhosted-gaming) to the project.
-
+If there is no guide for your game here yet, please think about [contributing](https://github.com/nukesor/selfhosted-gaming) to the project.
 
 ## Best practices
 
@@ -31,7 +30,7 @@ Looking for hints on how to set up a specific dedicated gaming server can be a r
 It sometimes feels as if you're digging through archives to find some arcane knowledge for summoning a terrible abomination. 
 The information you're looking for is are often spread amongst a variety of forums, Steam community posts, and blog posts.
 
-These posts are often outdated or vague. On top of this forums and blogs go offline all the time.
+These posts are often outdated or vague. On top of, this forums and blogs go offline all the time.
 
 That's why I decided to start this project.
 Let's keep everything we learned in one place.
