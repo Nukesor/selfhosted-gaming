@@ -11,6 +11,8 @@ Each game has it's own site, containing a full installation guide and all files 
 
 If there is no guide for your game here yet, please think about [contributing](https://github.com/nukesor/selfhosted-gaming) to the project.
 
+**Disclaimer:** For now, those guides are for hosting on Linux based systems, even though the instructions can be applied to Windows systems most of the time as well.
+
 ## Best practices
 
 Whenever you're done with your server setup, check out the [best practices](/best-practices/).
