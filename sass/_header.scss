@@ -1,4 +1,5 @@
 @import "helpers";
+@import "colors";
 
 .main-header {
     text-align: center;
@@ -13,7 +14,10 @@
 }
 
 .main-hero {
+    display: flex;
+    flex-direction: column;
     text-align: center;
+    position: relative;
     font-size: 1rem;
     font-weight: 400;
     color: $green;
@@ -21,6 +25,28 @@
 
     @include tablet-desktop {
         font-size: 1.5rem;
+        display: block;
+    }
+
+    #{$a-tags} {
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 16px;
+        color: $github-color;
+        background-color: $github-background-color;
+        margin: auto;
+
+        cursor: pointer;
+        padding: 2px 5px;
+
+        border-color: $github-border-color;
+        border-radius: .25em;
+
+        @include tablet-desktop {
+            position: absolute;
+            right: -11em;
+            top: 0;
+        }
     }
 }
 
