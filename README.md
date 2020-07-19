@@ -1,5 +1,7 @@
 # Self-hosted Game Servers
 
+![Pueue](https://raw.githubusercontent.com/Nukesor/images/master/selfhosted-gaming.png)
+
 The official website can be found at [selfhosted-gaming.com](https://selfhosted-gaming.com).
 
 The idea of this project is to create an **archive** and a well of knowledge for self-hosted game servers.
