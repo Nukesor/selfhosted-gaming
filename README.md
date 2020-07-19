@@ -1,6 +1,6 @@
 # Self-hosted Game Servers
 
-![Selfhosted-gaming](https://raw.githubusercontent.com/Nukesor/images/master/selfhosted-gaming.png)
+![Selfhosted-gaming](https://github.com/Nukesor/images/blob/master/selfhosted-gaming.png)
 
 The official website can be found at [selfhosted-gaming.com](https://selfhosted-gaming.com).
 
