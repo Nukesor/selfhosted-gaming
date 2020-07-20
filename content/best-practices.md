@@ -8,10 +8,15 @@ In the following I'll cover several tools and examples that might help you to ma
 
 ## Terminal multiplexer
 
-Terminal multiplexer, such as `tmux` or `screen` are super helpful.
+Most game servers offer an interactive shell, so admins can change stuff on the fly via commandline.
+That's why using a service manager such as systemd, is often not the best choice for managing game servers.
+
+However, terminal multiplexer, such as `tmux` or `screen` are super helpful and seem to be the right tool for the job.
 They allow you to run commands on your headless server in detached shell.
 
 This means, that you can start the server, exit your current shell session, ssh back onto your server and enter the **same** session you left a few hours ago.
+
+You can still manage your tmux sessions via systemd. Look at the coming sections for examples on how to do this.
 
 <div class="gif" alt="Tmux dedicated game server tutorial example">
     <img src="/best_practices/tmux_demo.gif" style="width:auto;"></img>
