@@ -19,6 +19,7 @@ Whenever you're done with your server setup, check out the [best practices](/bes
 There're examples for some best practices, that should spare you some headache and prevent you from some common mistakes!
 
 These include:
+
 - [Terminal multplexer](/best-practices/#terminal-multiplexer)
 - [Game management scripts](/best-practices/#helper-scripts)
 - [Managing your games via a service manager](/best-practices/#service-files)
@@ -29,7 +30,7 @@ This project is **open-source** on [Github](https://github.com/nukesor/selfhoste
 The idea is to create an **archive** and a well of knowledge for self-hosted game servers.
 
 Looking for hints on how to set up a specific dedicated gaming server can be a real hassle.  
-It sometimes feels as if you're digging through archives to find some arcane knowledge for summoning a terrible abomination. 
+It sometimes feels as if you're digging through archives to find some arcane knowledge for summoning a terrible abomination.
 The information you're looking for is are often spread amongst a variety of forums, Steam community posts, and blog posts.
 
 These posts are often outdated or vague. On top of, this forums and blogs go offline all the time.

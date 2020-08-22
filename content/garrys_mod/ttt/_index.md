@@ -22,6 +22,7 @@ Since TTT builds upon CS:Source game content, the game won't work properly witho
 2. Download the `Counter Strike: Source Game Content`.
 3. Unzip the downloaded file into `$GAME_DIR/garrys/addons/`
     It should look something like this afterwards.
+
 ```text
 $GAME_DIR
     └─garrys
@@ -44,6 +45,7 @@ An example map name is `ttt_rooftops_a2`. They usually begin with `ttt_`.
 This will be referred to as `$MAP_NAME`.
 
 Starting the server with a steam workshop collection:
+
 ```bash
 cd $GAME_DIR
 
@@ -58,6 +60,7 @@ cd $GAME_DIR
 ```
 
 Starting the server without steam workshop collection:
+
 ```bash
 cd $GAME_DIR
 

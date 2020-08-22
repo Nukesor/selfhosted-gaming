@@ -16,13 +16,11 @@ Pretty much everything you need is a relatively modern Java Runtime Environment.
 
 ## Installation
 
-
 1. Install Java, so you can run the `java -h` command on your command line.
 1. Go to Minecraft's official [server download website](https://www.minecraft.net/en-us/download/server/)
 1. Create the directory where you want your Minecraft server to live in.
     This will be referred to as `$GAME_DIR`.
 1. Copy the `server.jar` into `$GAME_DIR`.
-
 
 ## Start the Server
 
@@ -30,7 +28,8 @@ Before you can actually use or configure the server, you need to start it once.
 This initializes some crucial files, such as the `eula.txt` and the server configuration file `server.properties`.
 
 To start the server, go into `$GAME_DIR` and run this command:
-```
+
+```bash
 java -Xmx1024M -Xms1024M -jar server.jar nogui
 ```
 
@@ -46,11 +45,10 @@ Explanation of parameters:
 - `nogui` Since this will most likely run on headless server, you have to specify `nogui`.
         The server will otherwise try to open a graphical user interface.
 
-
 To be able to run the server, you need to accept the end-user license agreement.
-To do so, open the generated `eula.txt`. It should look something like this: 
+To do so, open the generated `eula.txt`. It should look something like this:
 
-```
+```text
 #By changing the setting below to TRUE you ...
 #Fri Jul 10 15:22:48 CEST 2020
 eula=false
@@ -68,7 +66,7 @@ A detailed description on every option can be found on the [minecraft wiki](http
 
 However, the most important variables for setting up the server will be cover over here as well.
 
-#### Operational
+### Operational
 
 - `server-ip` Leave blank, if you want to serve your server on all interfaces.
     If you want to only serve from a interface, please specify the IP of the interface.
@@ -85,7 +83,7 @@ However, the most important variables for setting up the server will be cover ov
     If you have friends with cracked Minecraft versions, set this to `false`.
 - `motd` The name of the server that will be shown to your clients.
 
-#### Gameplay
+### Gameplay
 
 - `level-seed` In case you want to play a specific world, enter your seed before starting the server and agreeing to the `eula`.
     If you already created a world, either delete the existing world folder (default name is `world`) or change the `level-name` parameter.

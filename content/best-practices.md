@@ -54,12 +54,12 @@ It's extremely important to properly shut down game servers, otherwise you risk 
 
 Regular backups are also a good best practices and very much recommended! Unless you don't mind loosing your 800h Minecraft/Factorio world.
 
-
 ## Server Management Script Example
 
 An full example for such a setup could be this:
 
 `factorio.sh` file. Accepts `startup`, `backup` and `shutdown` as parameters.
+
 ```bash
 #!/bin/bash
 action=$1
@@ -113,6 +113,7 @@ fi
 ```
 
 `start.sh` file. Responsible for starting the game server sessions
+
 ```bash
 #!/bin/bash
 
@@ -125,6 +126,7 @@ exit 0
 ```
 
 `stop.sh` file. Responsible for starting the game server sessions
+
 ```bash
 #!/bin/bash
 
@@ -144,6 +146,7 @@ exit 0
 This is a _Systemd_ service file.
 
 It does several things:
+
 - It executes the `start.sh` script, as soon as the network connection of the server is up.
 - It executes the `stop.sh` script, if the server shuts down or if you tell Systemd to do so.
 

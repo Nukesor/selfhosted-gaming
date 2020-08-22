@@ -20,7 +20,8 @@ Since parts of Prophunt might built upon CS:Source game content, the game might 
 1. Go to [this link](https://gmodcontent.com/)
 2. Download the `Counter Strike: Source Game Content`.
 3. Unzip the downloaded file into `$GAME_DIR/garrys/addons/`
-    It should look something like this afterwards.
+   It should look something like this afterwards.
+
 ```text
 $GAME_DIR
     └─garrys
@@ -28,13 +29,11 @@ $GAME_DIR
             └─css-content-gmodcontent
 ```
 
-
 ## Configuration
 
 I couldn't find any configuration details for Prophunt.
 
 Please create an issue or a pull request, if you can find any information about this.
-
 
 ## Run the Server
 
@@ -62,6 +61,7 @@ cd $GAME_DIR
 ```
 
 Starting the server without steam workshop collection:
+
 ```bash
 cd $GAME_DIR
 

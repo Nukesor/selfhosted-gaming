@@ -22,7 +22,7 @@ All credits go to the creators of that page!
 
 ## Preparation and post-round
 
-`ttt_preptime_seconds `(def. 30):
+`ttt_preptime_seconds` (def. 30):
 The length of the preparation phase that occurs after players spawn in and before traitors are selected and a new round begins. Specified in seconds.
 
 `ttt_firstpreptime` (def. 60):
@@ -56,7 +56,6 @@ The max number of minutes until the map is switched or a vote is started (see ab
 `ttt_always_use_mapcycle` (def. 0):
 Enables the use of your `mapcycle.txt` even if voting is enabled. Since GMod 13 no voting exists (at the time of writing), so this does nothing.
 
-
 # Gameplay
 
 ## Traitor and Detective counts
@@ -86,7 +85,6 @@ Maximum range within which a DNA sample of the killer is planted on the corpse o
 
 `ttt_killer_dna_basetime` (def. 100):
 Killer's DNA samples time out depending on how near he was to the victim. After that time has passed, the sample cannot be gathered anymore. This cvar sets the time in seconds when the killer was 0 units away. The time is lower when the range was higher, via a falloff curve. Note that due to the shape of the curve the time can sink below 0 even if the killer is within range according to the ttt_killer_dna_range convar, if the basetime is too low.
-
 
 ## Voice chat battery
 
@@ -194,7 +192,6 @@ When a player's Karma is above the starting level (meaning the karma max has bee
 `ttt_use_weapon_spawn_scripts` (def. 1):
 Toggles whether weapon scripts will be used. These `.txt` files in the /maps/ folder can be used to override or add weapon, ammo and player spawn points in a map. This is very useful for CS:S or HL2DM maps.
 
-
 # Equipment credits
 
 ## Traitor credits
@@ -250,7 +247,7 @@ Number of seconds for one point in the punch-o-meter to recharge.
 `ttt_idle_limit` (def. 180):
 Time in seconds a player is allowed to be idle after a round has started before he is moved to spectator.
 
-`ttt_namechange_kick `(def. 1):
+`ttt_namechange_kick` (def. 1):
 Check for name changes during an active round, and kick players who did one.
 
 `ttt_namechange_bantime` (def. 10):
@@ -260,6 +257,7 @@ Time in minutes to ban players who changed their name. Set to 0 to disable.
 Specifies how automatic bans made by TTT (low karma, namechange, etc) should be performed. This lets you specify whether TTT should use an admin plugin to ban, which can then make it easier to remove or adjust those bans using your admin plugin's interface.
 
 Possible settings for this convar:
+
 - `autodetect` Will detect the Lua-based plugins ULX and Evolve if present, else it will use standard "banid" bans`
 - `ulx` Force the use of ULX/Ulib to ban.
 - `evolve` Force the use of Evolve to ban.
