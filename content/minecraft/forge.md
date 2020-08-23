@@ -1,12 +1,12 @@
 +++
 title = "Mods with Forge"
 weight = 2
-date = 2020-08-28
+#date = 2020-08-28
 
-[taxonomies]
-tags = ["minecraft", "modding", "server", "forge"]
-categories = ["open-world"]
-authors = ["Arne Beer"]
+#[taxonomies]
+#tags = ["minecraft", "modding", "server", "forge"]
+#categories = ["open-world"]
+#authors = ["Arne Beer"]
 +++
 
 Running minecraft with your own mods on a headless server can be super nice.

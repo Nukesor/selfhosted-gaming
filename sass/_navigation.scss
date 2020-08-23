@@ -47,6 +47,7 @@ nav {
         flex-flow: row wrap;
         font-style: italic;
         justify-content: center;
+        margin-bottom: $bottom-spacing;
 
         .current-page, a {
             margin-left: 0.5rem;

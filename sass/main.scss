@@ -39,10 +39,20 @@ header, nav {
     align-items: center;
 }
 
+hr {
+    width: 100%;
+    max-width: $max-content-width;
+}
+
+.bottom-spacing {
+    margin-bottom: $bottom-spacing;
+}
+
+
 // Main content container
 main {
     width: 100%;
-    max-width: 800px;
+    max-width: $max-content-width;
     margin: 0 auto;
 
     ol, ul, pre {

@@ -69,10 +69,10 @@ However, the most important variables for setting up the server will be cover ov
 ### Operational
 
 - `server-ip` Leave blank, if you want to serve your server on all interfaces.
-    If you want to only serve from a interface, please specify the IP of the interface.
+    If you want to only serve from specific interface, specify the IP of that interface.
 - `server-port` The port your server accepts connections from.
     Default is `25565`.
-    If you change another value than `25565`, you have to specify the port on the client when manually adding the server.
+    If you change another value than `25565`, you have to also specify the port on the client when manually adding the server.
     This might look something like this: `ip_address:port`, e.g. `192.168.178.45:25566`.
 - `white-list` A white list specifies a list of users that's allowed to connect.
     **ONLY** these specified users can connect to the server, if this is set to `true`.
@@ -89,3 +89,12 @@ However, the most important variables for setting up the server will be cover ov
     If you already created a world, either delete the existing world folder (default name is `world`) or change the `level-name` parameter.
 - `gamemode` Either a `survival`, `creative`, `adventure` or `spectator`.
 - `view-distance` The radius of chunks a user can load. Has a direct impact on player's viewing distance.
+
+### Whitelisting
+
+If you enabled whitelisting on your server, only whitelisted users will be able to connect.
+To add a user to your whitelist, start the server and add them via the server cli interface with `/whitelist add USERNAME`.
+
+You can also enable/disable the whitelist on the live server with `/whitelist on/off`.
+
+Whenever you add/remove a user to/from the whitelist, the `$GAME_DIR/whitelist.json` file will be automatically updated.

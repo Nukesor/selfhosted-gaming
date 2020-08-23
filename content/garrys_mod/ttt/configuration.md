@@ -1,12 +1,12 @@
 +++
 title = "TTT Configuration values"
 weight = 1
-date = 2020-07-01
+#date = 2020-07-01
 
-[taxonomies]
-tags = ["garrys mod", "trouble in terroristtown", "configuration"]
-categories = ["fps", "first-person-shooter", "fun"]
-authors = ["Arne Beer"]
+#[taxonomies]
+#tags = ["garrys mod", "trouble in terroristtown", "configuration"]
+#categories = ["fps", "first-person-shooter", "fun"]
+#authors = ["Arne Beer"]
 +++
 
 # BACKUP

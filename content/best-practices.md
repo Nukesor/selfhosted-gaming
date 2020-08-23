@@ -1,6 +1,10 @@
 +++
 title = "General Best Practices"
 weight = 1
+#date = 2020-07-16
+
+#[taxonomies]
+#authors = ["Arne Beer"]
 +++
 
 This page aims to introduce you to some best-practices, when dealing with game servers.  

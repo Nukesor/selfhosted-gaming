@@ -1,24 +1,4 @@
-{% macro navigation(page, breadcrumbs=true, include_site=false) %}
-    {% if page.subsections %}
-        <div class="navigation-bar">
-            {% for subsection in page.subsections | sort %}
-                {% set subsection_item = get_section(path=subsection) %}
-                <div class="navigation-button">
-                    <a class="navigation-link" href="{{ subsection_item.permalink | safe }}">{{ subsection_item.title  }}</a>
-                </div>
-            {% endfor %}
-
-            <div type="navigation-button" class="icon search"></div>
-        </div>
-        <div class="navigation-bar">
-            {% for subpage in page.pages %}
-                <div class="navigation-button">
-                    <a href="{{ subpage.permalink | safe }}">{{ subpage.title  }}</a>
-                </div>
-            {% endfor %}
-        </div>
-    {% endif %}
-
+{% macro navigation(page, breadcrumbs=true, include_site=true) %}
     {% if breadcrumbs %}
         <div class="breadcrumbs">
             {% for parent in page.ancestors %}
@@ -32,6 +12,28 @@
             {% endif %}
         </div>
     {% endif %}
+    {% if page.subsections %}
+        <div class="navigation-bar">
+            {% for subsection in page.subsections | sort %}
+                {% set subsection_item = get_section(path=subsection) %}
+                <div class="navigation-button">
+                    <a class="navigation-link" href="{{ subsection_item.permalink | safe }}">{{ subsection_item.title  }}</a>
+                </div>
+            {% endfor %}
+
+            <div type="navigation-button" class="icon search"></div>
+        </div>
+    {% endif %}
+    {% if page.pages %}
+        <div class="navigation-bar">
+            {% for subpage in page.pages %}
+                <div class="navigation-button">
+                    <a href="{{ subpage.permalink | safe }}">{{ subpage.title  }}</a>
+                </div>
+            {% endfor %}
+        </div>
+    {% endif %}
+    <hr>
 {% endmacro navigation %}
 
 {% macro taxonomies(page) %}
