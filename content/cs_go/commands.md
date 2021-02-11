@@ -30,6 +30,7 @@ Afterwards, you can open the console via the `~` key.
 ## Bot commands
 
 - `bot_kick` Kicks all bots.
+- `bot_quota $amount` The maximum number of bots your server is allowed to have at any given time.
 - `bot_add_t` Adds a bot in the Terrorist team.
 - `bot_add_ct` Adds a bot in the Counter-Terrorist team.
 
