@@ -24,7 +24,9 @@ Afterwards, you can open the console via the `~` key.
 - `mp_roundtime 60` Maximum roundtime set to 60 minutes.
 - `mp_roundtime_defuse 60` Another command for roundtime, which you need to use when playing `de_*` maps
 - `mp_freezetime 0` No freezetime in the beginning of each round.
+- `mp_warmuptime 10` Set the warmup time to 10 seconds.
 - `mp_warmup_end` End warmup.
+- `mp_endwarmup_player_count 4` Stops warmup, when there're at least 5 players on the server.
 - `mp_restartgame 1` The server will restart the game after 1 second.
 
 ## Bot commands
