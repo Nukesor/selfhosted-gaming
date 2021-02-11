@@ -3,10 +3,10 @@ title = "Unreal Tournament 2004"
 sort_by = "weight"
 date = 2020-07-08
 
-[taxonomies]
-tags = ["arena-shooter", "ut2004", "Unreal-Tournament"]
-categories = ["fps", "first-person-shooter"]
-authors = ["Arne Beer"]
+#[taxonomies]
+#tags = ["arena-shooter", "ut2004", "Unreal-Tournament"]
+#categories = ["fps", "first-person-shooter"]
+#authors = ["Arne Beer"]
 +++
 
 Unreal Tournament 2004 is a timeless classic arena shooter.

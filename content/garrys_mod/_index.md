@@ -3,10 +3,10 @@ title = "Garry's Mod"
 sort_by = "weight"
 date = 2020-06-28
 
-[taxonomies]
-tags = ["garrys mod", "server-setup"]
-categories = ["fps", "first-person-shooter", "fun"]
-authors = ["Arne Beer"]
+#[taxonomies]
+#tags = ["garrys mod", "server-setup"]
+#categories = ["fps", "first-person-shooter", "fun"]
+#authors = ["Arne Beer"]
 +++
 
 Valve's game servers are not known to have the most user friendly interfaces and documentation.  
