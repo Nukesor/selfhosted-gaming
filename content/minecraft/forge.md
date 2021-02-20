@@ -33,7 +33,16 @@ Forge is now installed and you can add your mods.
 
 ## Start the Server
 
-Starting the server is now only a simple task of calling
+Just call the `forge-$version.jar` as if you would call the original Minecraft server jar.
+
+```
+java -Xmx1024M -Xms1024M -jar minecraft_server.1.16.5.jar nogui 
+```
+
+## How To Install Mods
+
+1. Download the mod's `*.jar` file.
+2. Copy the `*.jar` file to the `$GAME_DIR/mods/` directory
 
 ## List of Useful Mods
 
