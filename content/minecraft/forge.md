@@ -44,6 +44,6 @@ java -Xmx1024M -Xms1024M -jar minecraft_server.1.16.5.jar nogui
 1. Download the mod's `*.jar` file.
 2. Copy the `*.jar` file to the `$GAME_DIR/mods/` directory
 
-## List of Useful Mods
+## List of Useful (Server-Side only) Mods
 
 - [Morpheus](https://www.curseforge.com/minecraft/mc-mods/morpheus/) Only a percentage of all users need to lie in Beds for the next day to begin.
