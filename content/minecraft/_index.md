@@ -72,7 +72,7 @@ However, the most important variables for setting up the server will be cover ov
     If you want to only serve from specific interface, specify the IP of that interface.
 - `server-port` The port your server accepts connections from.
     Default is `25565`.
-    If you change another value than `25565`, you have to also specify the port on the client when manually adding the server.
+    If you change it to another value than `25565`, you'll have to specify the port on the client when adding the server via address. \
     This might look something like this: `ip_address:port`, e.g. `192.168.178.45:25566`.
 - `white-list` A white list specifies a list of users that's allowed to connect.
     **ONLY** these specified users can connect to the server, if this is set to `true`.

@@ -9,20 +9,19 @@ weight = 2
 #authors = ["Arne Beer"]
 +++
 
-Running minecraft with your own mods on a headless server can be super nice.
+Running Minecraft with your own mods on a headless server can be super nice.
 
-This allows you to add some quality-of-life mods, such as [Morpheus](https://www.curseforge.com/minecraft/mc-mods/morpheus/).
+This allows you to add some quality-of-life mods.
 
 ## Installation
 
-First of all, make sure to complete the setup of the vanilla Minecraft server and start the server once.
-
-You can also do this installation on any existing minecraft server of your own without problems.
+First of all, make sure to complete the setup of the vanilla Minecraft server and start the server at least once. \
+You can also do this installation on any existing Minecraft server.
 
 **However**, make a backup first, just to be sure!
 
-1. Download the [Forge Installer](https://files.minecraftforge.net/maven/net/minecraftforge/forge/index_1.16.2.html) to your `$GAME_DIR. **Make sure to pick the Minecraft right version**.
-1. Run the installer with `java -jar  forge-*-installer.jar --installServer`. This will install everything.
+1. Download the [Forge Installer](https://files.minecraftforge.net/maven/net/minecraftforge/forge/index_1.16.2.html) to your `$GAME_DIR. **Make sure to pick the installer for your Minecraft version**.
+2. Run the installer with `java -jar  forge-*-installer.jar --installServer`. This will install everything.
 
 ## Get Mods
 
@@ -35,3 +34,7 @@ Forge is now installed and you can add your mods.
 ## Start the Server
 
 Starting the server is now only a simple task of calling
+
+## List of Useful Mods
+
+- [Morpheus](https://www.curseforge.com/minecraft/mc-mods/morpheus/) Only a percentage of all users need to lie in Beds for the next day to begin.
