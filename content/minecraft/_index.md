@@ -98,3 +98,13 @@ To add a user to your whitelist, start the server and add them via the server cl
 You can also enable/disable the whitelist on the live server with `/whitelist on/off`.
 
 Whenever you add/remove a user to/from the whitelist, the `$GAME_DIR/whitelist.json` file will be automatically updated.
+
+
+## Server commands
+
+Here are a few useful commands for server operators.
+
+- `/time set [day, night]` Set the time of the day.
+- `/forceload add <from> [<to>]` force load a chunk.
+    `<from>` and `<to>` are a tuple of `x` and `z` each.
+- `/forceload query` show all loaded chunks.
