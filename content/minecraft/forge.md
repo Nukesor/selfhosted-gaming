@@ -47,3 +47,5 @@ java -Xmx1024M -Xms1024M -jar minecraft_server.1.16.5.jar nogui
 ## List of Useful (Server-Side only) Mods
 
 - [Morpheus](https://www.curseforge.com/minecraft/mc-mods/morpheus/) Only a percentage of all users need to lie in Beds for the next day to begin.
+- [FallingTree](https://www.curseforge.com/minecraft/mc-mods/falling-tree) Instant Tree feller.
+- [SimpleHarvest](https://www.curseforge.com/minecraft/mc-mods/simpleharvest) Instant right click harvesting.
