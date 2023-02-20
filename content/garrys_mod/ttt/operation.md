@@ -41,3 +41,44 @@ There are two ways to do this, both need **access to the server console**
 2. Connect to the shell where your server instance is running
 3. Run `ulx adduserid $YOUR_STEAM_ID superadmin`.
 4. You should now be superadmin and access the interface via `F6`.
+
+## Live commands
+
+### Admin commands
+
+- `ttt_roundrestart` Triggers the round to restart, will go immediately to a new round in the form of a new preparation phase. Also works if cheats are enabled (useful for mapping/development).
+- `ttt_print_traitors` Prints who the traitors are.
+- `ttt_print_adminreport` Prints who killed who.
+- `ttt_print_damagelog` First enable the convar `ttt_log_damage_for_console` (set to 1) to enable damage logging.
+    Then use this command to print out the log of the current round. Note that this is a lot of data.
+- `ttt_print_usergroups` Prints everyone’s usergroup (admin, superadmin, etc), for debugging Gmod admin status.
+- `ttt_highlight_admins` Set to 0 to make admins not appear gold/yellow on the scoreboard.
+
+### General commands
+
+These can be used by anyone during a game. Note that most of these are either already available under a key or are pretty specific. You don’t need any of this to play the game.
+
+- `ttt_version` Prints current version number.
+- `ttt_dropweapon` Will drop your current weapon.
+    By default the key that would open the GMod spawn menu (default Q) instead performs this action.
+    You can manually bind it to other keys using this concommand.
+- `ttt_equipswitch` Switches to slot 7 (your special equipment weapon) if you have one.
+    If you have that weapon out, it will instead switch to your previous weapon.
+    So you can quickly toggle to your equipment and back.
+    By default the noclip key (default V) will perform this command if sv_cheats is off (else it will noclip you).
+- `ttt_quickslot [slot number]` Switches to the given weapon slot without having to use the scroll menu.
+    Switches to previous weapon if you already have the slot's weapon out, so the `ttt_equipswitch` command functions the same as `ttt_quickslot 7`.
+- `ttt_toggle_disguise` Toggles your Disguiser equipment if you have bought it as Traitor.
+    Default key is Numpad Enter, this command can be used to rebind it.
+- `ttt_spectate` Moves you onto the spectator team.
+    You will not spawn as Terrorist until you use `ttt_spectate 0` to turn this off again.
+    Recommended you use the checkbox in the settings menu under F1 instead.
+- `ttt_print_playercount` Prints the number of players that were alive at the start of the round.
+
+These commands are useful when creating a map, rearm script or working on the code.
+All of them require `sv_cheats` to be enabled, so they will obviously not work in normal gameplay.
+
+- `ttt_force_terror` Forces you to spawn as a Terrorist. Cheat.
+- `ttt_force_traitor` Forces your role to Traitor. Cheat.
+- `ttt_force_detective` Forces your role to Detective. Cheat.
+- `ttt_cheat_credits` Gives you many equipment credits. Cheat.
