@@ -15,7 +15,6 @@ It's possible to easily edit configuration variables, in-game roles and server r
 For this to work, make sure to add the [ULX mod](https://steamcommunity.com/sharedfiles/filedetails/?id=557962280) to your modlist.
 
 The ULX interface allows live-editing of pretty much all configuration variables, assignments and much more.
-Just press `F6` to open it, while on the server!
 
 **Disclaimer**
 Configuration values that're changed in this way, won't be persisted and reset to the default values or the values from your configuration file.
@@ -41,6 +40,12 @@ There are two ways to do this, both need **access to the server console**
 2. Connect to the shell where your server instance is running
 3. Run `ulx adduserid $YOUR_STEAM_ID superadmin`.
 4. You should now be superadmin and access the interface via `F6`.
+
+### ULX tips
+
+#### Setting a shortcut for ulx
+
+If you run `bind f6 "ulx menu"` in the console, just can just press `F6` to open it, while on the server!
 
 ## Live commands
 
