@@ -1,11 +1,11 @@
-![Selfhosted-gaming](https://github.com/Nukesor/images/blob/master/selfhosted-gaming.png)
+![Selfhosted-gaming](https://github.com/Nukesor/images/blob/main/selfhosted-gaming.png?raw=true)
 
-The official website can be found at [selfhosted-gaming.com](https://selfhosted-gaming.com).
+The official website can be found at [selfhosted-gaming.arne.beer](https://selfhosted-gaming.arne.beer).
 
 The idea of this project is to create an **archive** and a well of knowledge for self-hosted game servers.
 
 Looking for hints on how to set up a specific dedicated gaming server can be a real hassle.
-It sometimes feels as if you're digging through archives to find some arcane knowledge for summoning a terrible abomination. 
+It sometimes feels as if you're digging through archives to find some arcane knowledge for summoning a terrible abomination.
 
 The information you're looking for is are often spread among a variety of forums, Steam community posts, and blog posts.
 These posts are often outdated or vague and on top of this old gaming forums and blogs keep going offline all the time.
@@ -23,14 +23,13 @@ This project is supposed to:
 2. Act as a consistent backup in an age of missing websites and disappearing gaming forums.
 3. Enable others to easily contribute and add their own games.
 
-
-# Building the project:
+# Building the project
 
 The project is build with the static site generator [zola](https://github.com/getzola/zola).
 
 1. Install zola
 2. Run `zola build`
-4. Serve everything that's in the `public` folder
-3. Done
+3. Serve everything that's in the `public` folder
+4. Done
 
 For debugging purposes you can run `zola serve`, which starts a local server on `https://localhost:1111`
