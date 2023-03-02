@@ -29,6 +29,11 @@ Afterwards, you can open the console via the `~` key.
 - `mp_endwarmup_player_count 4` Stops warmup, when there're at least 5 players on the server.
 - `mp_restartgame 1` The server will restart the game after 1 second.
 
+## Kills/Bans
+
+- `removeallids` Unban all people
+- ``
+
 ## Bot commands
 
 Bot's don't work in `competetive` and `wingman` mode.
@@ -43,7 +48,7 @@ They'll just stay around and do nothing at spawn.
 
 - `map [name] [gamemode]` Use this console command to instantly change the map you're currently playing to a different map.
 
-#### Map names 
+#### Map names
 
 - Cache: `de_cache`
 - Dust II: `de_dust2`
@@ -89,7 +94,7 @@ They'll just stay around and do nothing at spawn.
 - Skirmish: `skirmish`
 - Danger Zone: `survival`
 
-## Fun commands 
+## Fun commands
 
 - `mp_maxmoney 99999` Sets maximum money to 99 999 instead of 16 000
 - `mp_startmoney 99999` Your starting money will be set to 99 999
