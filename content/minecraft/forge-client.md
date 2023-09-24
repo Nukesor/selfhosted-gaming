@@ -34,9 +34,10 @@ A new Minecraft Forge instance is now installed and you can add your mods.
 - [Apple Skin](https://www.curseforge.com/minecraft/mc-mods/appleskin) Show hidden hunger mechanics.
 - [Crafting Tweaks](https://www.curseforge.com/minecraft/mc-mods/crafting-tweaks) Adds a `clear`, `rotate` and `balance` option for the crafting grid.
 - [Inventory sorter](https://www.curseforge.com/minecraft/mc-mods/inventory-sorter) Quality of life inventory management.
+- [Balm](https://www.curseforge.com/minecraft/mc-mods/balm) Dependency for a few mods.
 - [Just enough items](https://www.curseforge.com/minecraft/mc-mods/jei) Better crafting and item inspection interface.
-- [Journey Map](https://www.curseforge.com/minecraft/mc-mods/journeymap/download/3210058) A nice ingame map :)
-- [Optifine](https://optifine.net/home) Better graphics and zoom!
-- [Light overlay](https://www.curseforge.com/minecraft/mc-mods/light-overlay) Shows where monsters can spawn.
+- [Journey Map](https://www.curseforge.com/minecraft/mc-mods/journeymap/files) A nice ingame map :)
 - [GravelMiner](https://legacy.curseforge.com/minecraft/mc-mods/gravelminer) Instant Gravel mining.
 - [FallingTree](https://www.curseforge.com/minecraft/mc-mods/falling-tree) Instant Tree feller.
+- [Light overlay](https://www.curseforge.com/minecraft/mc-mods/light-overlay) Shows where monsters can spawn.
+- [Optifine](https://optifine.net/home) Better graphics and zoom!
