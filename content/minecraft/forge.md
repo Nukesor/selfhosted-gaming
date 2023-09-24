@@ -20,7 +20,7 @@ You can also do this installation on any existing Minecraft server.
 
 **However**, make a backup first, just to be sure!
 
-1. Download the [Forge Installer](https://files.minecraftforge.net/maven/net/minecraftforge/forge/index_1.16.2.html) to your `$GAME_DIR. **Make sure to pick the installer for your Minecraft version**.
+1. Download the [Forge Installer](https://files.minecraftforge.net/net/minecraftforge/forge/) to your `$GAME_DIR. **Make sure to pick the installer for your Minecraft version**.
 2. Run the installer with `java -jar  forge-*-installer.jar --installServer`. This will install everything.
 
 ## Get Mods
@@ -28,7 +28,8 @@ You can also do this installation on any existing Minecraft server.
 Forge is now installed and you can add your mods.
 
 1. Create the `$GAME_DIR/mods` folder.
-2. Download all of your mods. **Be careful that the mod is for the correct minecraft version.** Some mods also come with support for another mod loader. Be sure to pick the _Forge_ version.
+2. Download all of your mods. **Be careful that the mod is for the correct minecraft version.**
+  Some mods also come with support for another mod loader. Be sure to pick the _Forge_ version.
 3. Copy those mod files into the `$GAME_DIR/mods` folder.
 
 ## Start the Server
@@ -36,7 +37,7 @@ Forge is now installed and you can add your mods.
 Just call the `forge-$version.jar` as if you would call the original Minecraft server jar.
 
 ```
-java -Xmx1024M -Xms1024M -jar minecraft_server.1.16.5.jar nogui 
+java -Xmx1024M -Xms4096M -jar minecraft_server.*.jar nogui
 ```
 
 ## How To Install Mods
@@ -46,6 +47,6 @@ java -Xmx1024M -Xms1024M -jar minecraft_server.1.16.5.jar nogui
 
 ## List of Useful (Server-Side only) Mods
 
-- [Morpheus](https://www.curseforge.com/minecraft/mc-mods/morpheus/) Only a percentage of all users need to lie in Beds for the next day to begin.
 - [FallingTree](https://www.curseforge.com/minecraft/mc-mods/falling-tree) Instant Tree feller.
-- [SimpleHarvest](https://www.curseforge.com/minecraft/mc-mods/simpleharvest) Instant right click harvesting.
+- [GravelMiner](https://legacy.curseforge.com/minecraft/mc-mods/gravelminer) Instant Gravel mining.
+
