@@ -78,7 +78,6 @@ However, the most important variables for setting up the server will be cover ov
     **ONLY** these specified users can connect to the server, if this is set to `true`.
     However, administrator (OPs) are always white-listed.
 - `max-players` The maximum amount of concurrent users.
-- `playersSleepingPercentage` The amount of players that need to sleep for the night to be skipped.
 - `level-name` This is the name of the folder your world will be stored in. Default is `world`.
 - `online-mode` If set to `true` the server will query Mojang and only allow users with verified accounts to connect to your server.
     If you have friends with cracked Minecraft versions, set this to `false`.
@@ -109,3 +108,4 @@ Here are a few useful commands for server operators.
 - `/forceload add <from> [<to>]` force load a chunk.
     `<from>` and `<to>` are a tuple of `x` and `z` each.
 - `/forceload query` show all loaded chunks.
+- `/gamerule playersSleepingPercentage 0.3` The amount of players that need to sleep for the night to be skipped.
