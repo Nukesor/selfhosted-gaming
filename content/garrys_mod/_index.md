@@ -1,28 +1,22 @@
 +++
 title = "Garry's Mod"
 sort_by = "weight"
-date = 2020-06-28
-
-#[taxonomies]
-#tags = ["garrys mod", "server-setup"]
-#categories = ["fps", "first-person-shooter", "fun"]
-#authors = ["Arne Beer"]
 +++
 
-Valve's game servers are not known to have the most user friendly interfaces and documentation.  
+Valve's game servers are not known to have the most user friendly interfaces and documentation.
 This main article will give you an idea on how to setup up a Garry's Mod server.
 
 Mods and specific game modes have their own section and can be found either via the navigation or our search function.
 
 ## Prerequisites
 
-First of all you need to install `steamcmd`.  
+First of all you need to install `steamcmd`.
 `steamcmd` is used to install games from the commandline without any kind of visual user interface.
 
 ## Installation
 
 1. Create a directory where you want your game server to be. This will be referred to as `$GAME_DIR`.
-1. Install the server via `steamcmd`.  
+1. Install the server via `steamcmd`.
    **IMPORTANT:** `$GAME_DIR` has to be the **absolute** path of the directory.
 
 ```bash
@@ -64,13 +58,13 @@ You therefore might need to do some researching yourself, depending on which kin
 ## Setting up Steam Workshop Collections
 
 It's a really good idea, to either use or create a steam workshop collection.
-This way, you have an easy way of adding and removing workshop content via the web interface.  
+This way, you have an easy way of adding and removing workshop content via the web interface.
 Otherwise you would have to manually download, copy, delete and update your server every time something changes.
 
 Another side-effect is that your friends can easily download your required mods via Steam, which is **at least** a hundred times faster than via Garry's Mod.
 Their download speed is excruciatingly slow.
 
-If you still don't want to use workshop collections, please skip to the next sub section.  
+If you still don't want to use workshop collections, please skip to the next sub section.
 Otherwise, here's what you have to do:
 
 **1. Get your Steam Web API key**
@@ -97,9 +91,9 @@ Otherwise, here's what you have to do:
 
 - After finding your collections in the last step, select your collection
 - Now get the id that's in the URL.
-    The URL looks like this `https://steamcommunity.com/sharedfiles/filedetails/?id=2090357275`.  
-    The Id for this workshop is `2090357275`.  
-    This Id will be referred to as `$WORKSHOP_ID`.  
+  The URL looks like this `https://steamcommunity.com/sharedfiles/filedetails/?id=2090357275`.
+  The Id for this workshop is `2090357275`.
+  This Id will be referred to as `$WORKSHOP_ID`.
 
 You are now capable of creating workshop collections.
 You could have, for instance, a collection for TTT and another one for Prophunt.

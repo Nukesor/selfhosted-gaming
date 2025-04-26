@@ -1,12 +1,6 @@
 +++
 title = "Client Mods with Forge"
 weight = 2
-#date = 2020-08-28
-
-#[taxonomies]
-#tags = ["minecraft", "modding", "server", "forge"]
-#categories = ["open-world"]
-#authors = ["Arne Beer"]
 +++
 
 Running Minecraft with mods is awesome. \
@@ -17,17 +11,17 @@ This allows for a lot of quality of life improvements, such as maps, JEI and oth
 This tutorial is written for the official `minecraft-launcher`.
 
 1. Download the Minecraft ATlauncher via your package manager (AUR: `atlauncher-bin`).
-2. Start the launcher and connect it with your minecraft account.
-3. Create a new client instances with mods enabled via Forge.
+1. Start the launcher and connect it with your minecraft account.
+1. Create a new client instances with mods enabled via Forge.
 
 ## Get Mods
 
 A new Minecraft Forge instance is now installed and you can add your mods.
 
 1. Download all of your mods. **Be careful that the mod is for the correct minecraft version.**
-  Some mods also come with support for another mod loader. Be sure to pick the _Forge_ version.
-2. Click on the instances tab and click on `Add mods`.
-3. Select the downloaded mod files.
+   Some mods also come with support for another mod loader. Be sure to pick the _Forge_ version.
+1. Click on the instances tab and click on `Add mods`.
+1. Select the downloaded mod files.
 
 ## List of Useful Mods
 

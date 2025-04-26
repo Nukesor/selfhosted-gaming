@@ -1,12 +1,6 @@
 +++
 title = "TTT Configuration values"
 weight = 1
-#date = 2020-07-01
-
-#[taxonomies]
-#tags = ["garrys mod", "trouble in terroristtown", "configuration"]
-#categories = ["fps", "first-person-shooter", "fun"]
-#authors = ["Arne Beer"]
 +++
 
 # BACKUP
@@ -101,7 +95,6 @@ Battery drain per tick of voice chat for both admins and Detectives. Set to 0 to
 
 `ttt_voice_drain_recharge` (def. 0.05):
 Battery recharge rate per tick of not voice chatting.
-
 
 ## Other gameplay settings
 
@@ -258,7 +251,7 @@ Specifies how automatic bans made by TTT (low karma, namechange, etc) should be 
 
 Possible settings for this convar:
 
-- `autodetect` Will detect the Lua-based plugins ULX and Evolve if present, else it will use standard "banid" bans`
+- `autodetect` Will detect the Lua-based plugins ULX and Evolve if present, else it will use standard "banid" bans\`
 - `ulx` Force the use of ULX/Ulib to ban.
 - `evolve` Force the use of Evolve to ban.
 - `sm` Will use Sourcemod's sm_ban command. Note that SM is not auto-detected.
@@ -270,7 +263,7 @@ Possible settings for this convar:
 Enable to make detectives get a special hat. May be buggy.
 
 `ttt_playercolor_mode` (def. 1):
-Sets player coloring mode. 0 = off, 1 =  muted/dark colors only, 2 = select from a larger list of colors including brighter ones, 3 = fully random colors.
+Sets player coloring mode. 0 = off, 1 = muted/dark colors only, 2 = select from a larger list of colors including brighter ones, 3 = fully random colors.
 
 `ttt_ragdoll_collide` (def. 0):
 By default ragdolls will not collide with other ragdolls and some small physics objects (or doors set not to collide with debris). Enabling ragdoll collision will change that. Earlier versions of TTT had ragdoll collision, but this allowed griefers to create situations where ragdolls were physics-glitched to constantly collide, causing serious lag. Some maps may expect ragdolls to collide though. Use with care.

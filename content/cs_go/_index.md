@@ -1,12 +1,6 @@
 +++
 title = "CS:GO"
 sort_by = "weight"
-date = 2021-02-10
-
-#[taxonomies]
-#tags = ["source", "cs:go", "server-setup"]
-#categories = ["fps", "first-person-shooter", "competetive"]
-#authors = ["Arne Beer"]
 +++
 
 This section should help you to get a CS:GO Server up and running in no time.

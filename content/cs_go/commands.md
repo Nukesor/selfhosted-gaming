@@ -1,14 +1,7 @@
 +++
 title = "Server commands"
 weight = 2
-date = 2021-02-11
-
-#[taxonomies]
-#tags = ["source", "cs:go", "server-setup"]
-#categories = ["fps", "first-person-shooter", "competetive"]
-#authors = ["Arne Beer"]
 +++
-
 
 First of all, enable the console in the CS:GO game settings. \
 Afterwards, you can open the console via the `~` key.
@@ -16,7 +9,7 @@ Afterwards, you can open the console via the `~` key.
 ## Team commands
 
 - `mp_limitteams 0` Removes team limits. \
-    This lets you have as many players as you want on one team.
+  This lets you have as many players as you want on one team.
 - `mp_autoteambalance 0` Turns off automatic team balance.
 
 ## Round commands
@@ -32,7 +25,7 @@ Afterwards, you can open the console via the `~` key.
 ## Kills/Bans
 
 - `removeallids` Unban all people
-- ``
+- \`\`
 
 ## Bot commands
 

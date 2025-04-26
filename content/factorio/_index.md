@@ -1,12 +1,6 @@
 +++
 title = "Factorio"
 sort_by = "weight"
-date = 2020-07-08
-
-#[taxonomies]
-#tags = ["factorio", "gaming", "server", "self-hosted"]
-#categories = ["management", "automation"]
-#authors = ["Arne Beer"]
 +++
 
 Factorio's server setup is super straight forward. They offer a free dedicated server download, that can be downloaded by everyone.

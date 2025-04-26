@@ -2,12 +2,6 @@
 title = "Prophunt"
 sort_by = "weight"
 insert_anchor_links = "right"
-date = 2020-07-01
-
-[taxonomies]
-tags = ["garrys mod", "trouble in terroristtown", "hide-and-seek"]
-categories = ["fps", "first-person-shooter", "fun"]
-authors = ["Arne Beer"]
 +++
 
 This section deals with setting up a Garry's Mod server for the game mode _Prophunt_.
@@ -18,8 +12,8 @@ Before you start with this setup, please make sure that you followed the install
 Since parts of Prophunt might built upon CS:Source game content, the game might not work properly without downloading and installing these files.
 
 1. Go to [this link](https://gmodcontent.com/)
-2. Download the `Counter Strike: Source Game Content`.
-3. Unzip the downloaded file into `$GAME_DIR/garrys/addons/`
+1. Download the `Counter Strike: Source Game Content`.
+1. Unzip the downloaded file into `$GAME_DIR/garrys/addons/`
    It should look something like this afterwards.
 
 ```text

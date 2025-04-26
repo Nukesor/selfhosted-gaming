@@ -1,12 +1,6 @@
 +++
 title = "Configuration"
 weight = 1
-#date = 2023-02-28
-
-#[taxonomies]
-#tags = ["old-school", "cod4", "Call of Duty"]
-#categories = ["fps", "first-person-shooter"]
-#authors = ["Arne Beer"]
 +++
 
 ## Introduction
@@ -17,7 +11,7 @@ In general, you can pass arguments to the binary using:
 
 - Adding `+set value_name value` when calling the binary
 - Having `set value_name value` set in a configuration file
-    That configuration file is then executed via `+exec $path_to_config`
+  That configuration file is then executed via `+exec $path_to_config`
 
 ## Configuration
 
@@ -37,11 +31,11 @@ You will need to specify the following in the startup command:
 
 - `+set dedicated` tells the server if it should run as dedicated or not. 1 = lan, 2 = dedicated
 - `+set sv_punkbuster` specifies if Punkbuster anti-cheat should be enabled.
-    Since Punkbuster does not support Cod4 anymore, it's recommended to set it at 0.
+  Since Punkbuster does not support Cod4 anymore, it's recommended to set it at 0.
 - `+set sv_maxclients` specifies the maximum amount of players that can connect at the same time.
-    This *includes* the private slots specified later on.
+  This *includes* the private slots specified later on.
 - `+map_rotate` tells the server to start the map rotation.
-    Although this is not necessarily needed, it won't start a map without it, which prevents player from joining.
+  Although this is not necessarily needed, it won't start a map without it, which prevents player from joining.
 
 ### Config file
 
@@ -79,19 +73,19 @@ sv_authorizemode "1"
   - ^6 = Pink/Magenta
   - ^7 = White
 - `rcon_password` Rcon stands for remote connection.
-    This allows admin to manage the server from within the game.
-    This variable sets the password needed for admins to authenticate.
-    It must be **at least** 8 characters long.
+  This allows admin to manage the server from within the game.
+  This variable sets the password needed for admins to authenticate.
+  It must be **at least** 8 characters long.
 - `g_password` A server password.
-    If set, requires players to enter a password before they join the server.
-    If you don't want this, leave it empty.
+  If set, requires players to enter a password before they join the server.
+  If you don't want this, leave it empty.
 - `sv_privatePassword` The password a player needs for private slots.
-    Private slots are kept open to allow admins to join even when the server is on it's player limit.
+  Private slots are kept open to allow admins to join even when the server is on it's player limit.
 - `sv_privateclients` The amount of slots the server should reserve for admins.
 - `sv_floodProtect` **TODO**
 - `sv_reconnectLimit` The amount of times a client is allowed to try reconnecing on disconnect or failures
 - `sv_cheats` Are cheats enabled or not.
-    A cheat could be no-clip, god mode or unlimited ammonution.
+  A cheat could be no-clip, god mode or unlimited ammonution.
 - `sv_voice` If voice chat is enabled or not. 1 is on, 0 is off.
 - `scr_teambalance` Tells the server if it should try to balance teams if not an even number is in all teams.
 - `g_allowvote` Allow the players to vote for maps or not.

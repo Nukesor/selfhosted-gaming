@@ -1,12 +1,6 @@
 +++
 title = "Unreal Tournament 2004"
 sort_by = "weight"
-date = 2020-07-08
-
-#[taxonomies]
-#tags = ["arena-shooter", "ut2004", "Unreal-Tournament"]
-#categories = ["fps", "first-person-shooter"]
-#authors = ["Arne Beer"]
 +++
 
 Unreal Tournament 2004 is a timeless classic arena shooter.
@@ -25,8 +19,8 @@ First of all you need to install these prerequisites:
 
 ## Installation
 
-1. Download the dedicated server version of UT2004 from [fileplanet](https://www.fileplanet.com/archive/p-18877/Unreal-Tournament-2004-Server-v3186) or the locally [mirrored file](https://github.com/Nukesor/selfhosted-gaming/releases/download/ut2004/DedicatedServer3339-BonusPack.zip).  
-    The original software has been developed by Epic Games & Digital Extremes. The license included in the archive allows to "... exchange the Server-Only Software at no charge among other end-users and distribute them to others over the Internet, ...".
+1. Download the dedicated server version of UT2004 from [fileplanet](https://www.fileplanet.com/archive/p-18877/Unreal-Tournament-2004-Server-v3186) or the locally [mirrored file](https://github.com/Nukesor/selfhosted-gaming/releases/download/ut2004/DedicatedServer3339-BonusPack.zip).
+   The original software has been developed by Epic Games & Digital Extremes. The license included in the archive allows to "... exchange the Server-Only Software at no charge among other end-users and distribute them to others over the Internet, ...".
 1. Create a new folder, where you want the game installed.
 1. Unzip the downloaded archive into this folder.
 1. You now need to get a Server CD Key for your Server. Go to this [website](https://www.epicgames.com/unrealtournament/forums/cdkey.php?2004) and request a new server CD key.
@@ -41,7 +35,7 @@ E.g. `"DM-Asbestos?game=XGame.xCTFGame?modifier=BonusPack.MutCrateCombo"`.
 
 The full command looks like this:
 
-``` bash
+```bash
 ./ucc-bin server \
     "DM-Asbestos?game=XGame.xCTFGame?modifier=BonusPack.MutCrateCombo" \
     ini=UT2004.ini \
@@ -130,14 +124,13 @@ This is the official list of modifiers:
 
 UT2004's Webadmin supports to modes.
 
-**Basic mode:**  
+**Basic mode:**
 A single admin user who has access to everything and can change every aspect of the server.
 
-**XAdmin System:**  
+**XAdmin System:**
 UT2004 also has an advanced system, called XAdmin, which allows you to have multiple user accounts and passwords.
 Each user has it's own permissions.
 For instance, one user could have access to kick but not ban, while another user could have access to do everything except setting the server password.
-
 
 First of all, we will setup the necessary options for both systems.
 
@@ -185,14 +178,14 @@ You should now be able to access the admin and groups menu on the top right of t
 The first thing you have to do, is to change the default password to a secure password!
 
 When logging in via the in-game console, you will have use the format:
+
 ```text
 adminlogin user password
 ```
 
-
 ## Full example command
 
-``` bash
+```bash
 ./ucc-bin server \
     "DM-Asbestos?game=XGame.xDeathMatch?AdminName=your_name?AdminPassword=your_pass?modifier=XGame.MutRegen" \
     ini=UT2004.ini \
